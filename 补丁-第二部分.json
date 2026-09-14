@@ -1,0 +1,1247 @@
+{
+ "DjrBHdQ1FT": "返回",
+
+ "oWcu934k6I": "新消息",
+
+ "jdNRj8ZeVa": "通知我",
+
+ "KJi/Ba8KxN": "此页面在后台时收到回复则通知。此设备上所有你的 agent 共用此设置。",
+
+ "IwDEWxhcSj": "通知在此处被阻止。在浏览器或系统设置中允许后重试。",
+
+ "TGcwqbVpqB": "允许通知以开启此功能。",
+
+ "JRcIRe4XAM": "自定义 {name}",
+
+ "yxxTUAbGja": "向 Aibo 共享我的位置",
+
+ "VkW0gQl7Jc": "开启后，Aibo 可使用你的大致区域（城市、地区、邮编、国家），打开应用时刷新。绝非精确位置。",
+
+ "jRTfORiEzl": "共享中 · {place}",
+
+ "XfKNCgUI3C": "共享中",
+
+ "uiqnuiF+AF": "无法关闭位置共享。重试。",
+
+ "HwALmHxoJw": "通过 Slack",
+
+ "H0xGRXlrK8": "通过 Messages",
+
+ "R4P9Lj4pMf": "通过短信",
+
+ "Kb8xCUpl30": "通过邮件",
+
+ "qdxIRiXefE": "语音消息后朗读回复",
+
+ "WbGmfihw7O": "你口述消息后，Aibo 的回复会在应用打开时朗读出来。",
+
+ "E+xjlrIs6Y": "Agent",
+
+ "JOYQkUw/ZW": "{name}，{subtitle}",
+
+ "gXgX5lADIT": "折叠 agent 列表",
+
+ "SN6m8mAjE3": "展开 agent 列表",
+
+ "A2JjyddP7/": "反馈类型",
+
+ "HxIuLAqnya": "添加截图",
+
+ "8bS02vbsS7": "详细了解 Anthropic 如何使用反馈",
+
+ "Ru+H+iYYQm": "反馈已提交",
+
+ "MXEk6aIqmc": "提交反馈失败",
+
+ "acv1TV4/3y": "{names} 无法添加。截图是图片，总共不超过 {limit} MB。",
+
+ "Htp3+g9/2i": "{names} 无法添加。一个报告最多 {max} 张截图。",
+
+ "9Fpc9SYoPO": "Bug 报告",
+
+ "XoDuNuNuGb": "功能请求",
+
+ "Srr3VDOUYm": "描述你希望看到的功能或改进",
+
+ "dAacpaCf+2": "一般反馈",
+
+ "TWt1bDpbYn": "分享你对应用的想法",
+
+ "1fkCSmca0s": "告诉我们你在想什么…",
+
+ "re8N/6DvLX": "它的对话会随之删除，除非你已与他人共享。",
+
+ "RrUjLr7JXI": "无法删除。重试。",
+
+ "LqgI3oIPzg": "设置 {name} 并打开它的对话。",
+
+ "gFrQtihvnM": "正在设置你的新 agent。",
+
+ "X0vwPv4VVr": "其他人？",
+
+ "smm30NVggc": "描述工作，我来设置一个助手。",
+
+ "UDtPT12Mhj": "你还需要谁？",
+
+ "H7SWCGpYQA": "选一个，或设置其他人。",
+
+ "8ovUJv43s7": "它的用途",
+
+ "dH6Yj1XWLe": "该用途不可用。",
+
+ "8mqtjNuRvR": "此账户的 Aibo 当前已关闭。",
+
+ "c256Zwwel9": "删除 {name}…",
+
+ "EfzTRb5GHH": "新建 agent 当前不可用。",
+
+ "Vrks3MS7CX": "账户…",
+
+ "jbvkbqXUdF": "打开该 agent。",
+
+ "7rk5oKAuJr": "{purpose}，未读",
+
+ "4dynjCVZXM": "尚未设置。点按重试",
+
+ "nlSC3Wg7cn": "无法加载你的 agent。",
+
+ "fSPQuGPjfh": "正在重新询问…",
+
+ "HKWbNtmoZZ": "此账户未设置 Aibo",
+
+ "3d8DAeLqLY": "此账户已关闭 Aibo。在 Slack 的 #aibo-feedback 频道申请启用（功能开关是 ccr_aibo_config），然后重试。",
+
+ "/i9CzpAkys": "{agentName} 不可用",
+
+ "U/kQCT1dfy": "Aibo 无法连接",
+
+ "6I7AfPL2Xb": "Aibo 无法连到它的服务器来设置此账户。检查网络后重试。",
+
+ "1aatyJoYxh": "该 agent 不是你的",
+
+ "DbGIT3XEyg": "此链接未指向你的某个 agent。它可能已被删除，或链接有误。",
+
+ "Qe0a6WvgE4": "返回 {agentName}",
+
+ "USEEA7Ocrn": "此账户尚未设置 Aibo",
+
+ "wcQ6w9TGNV": "个人 Claude 账户需要一次性设置。在 <link>go/antfood</link> 添加此账户的 UUID，在那里打开 Aibo，几分钟后重试。",
+
+ "YAyS77JE3o": "账户 UUID",
+
+ "XcaYUulXtp": "复制账户 UUID",
+
+ "qofkTpvIR6": "设置个人账户",
+
+ "TgO9wzfuvs": "指南包含每一步，包括 UUID 填在哪里。",
+
+ "4r4tO1bGpp": "如何设置个人账户",
+
+ "ZWXIbkUkhk": "置顶",
+
+ "smuZrHUpAn": "回应",
+
+ "PRzLiYDdOS": "用 {emoji} 回应",
+
+ "WMF9YUgyQ+": "你用 {emoji} 回应了",
+
+ "BX1BNHwKby": "回应…",
+
+ "8eIx8P2VPK": "复制",
+
+ "fvCagIQiIz": "已复制",
+
+ "3lEz3yFkvU": "回复：{text}。显示原文。",
+
+ "Iabcfmktay": "显示原文",
+
+ "ym7P/6W6AS": "一个助手接手了该会话，因此此内容转到时间线。",
+
+ "PfJNCHtL+h": "无法打开文件。重试。",
+
+ "PBBp0BjXY/": "此文件过大，无法在此打开。",
+
+ "ThZHIc/xv8": "无法获取该图片。重试。",
+
+ "mTAVL3BWx5": "更多",
+
+ "UbI+5Y5FNx": "回复",
+
+ "+9fOe6HR49": "编辑",
+
+ "IuXgs8AUQm": "分享",
+
+ "SUBAqkA5V2": "重试",
+
+ "fhwTpAcBLC": "来源",
+
+ "3X+LcBr3/E": "{count, plural, one {# 个来源} other {# 个来源}}",
+
+ "DBdZZvYtdj": "Slack 会话",
+
+ "sFgqUttmHZ": "{agentName} 用 {emojiList} 回应了",
+
+ "SEsx7hnYQU": "未送达。点按重试",
+
+ "a+Dh2BNxL/": "你：{text}",
+
+ "+b2F9neJQ2": "移除附件，{name}",
+
+ "md35i67A+B": "没听清。长按重试。",
+
+ "Us5/A5hb3a": "取消",
+
+ "bVcwr3viOX": "已读",
+
+ "fq7hjq1tzR": "聆听中",
+
+ "fFeZ3TcS2k": "抱歉，没听清",
+
+ "5wz37EkFGt": "转写失败。请重试。",
+
+ "2KPsKy1K/y": "给 {agentName} 发消息",
+
+ "XVfpo6IhCV": "回复 {agentName}",
+
+ "EMaHG5XsZX": "回复此消息",
+
+ "IHwJT5VI47": "编辑消息",
+
+ "CLv5xco5al": "编辑消息时无法附加文件",
+
+ "PaBk1bYo14": "取消编辑",
+
+ "ZRaKvb/Hki": "无法附加文件夹",
+
+ "5YgV2BofWP": "开始口述",
+
+ "GhKALRqJqu": "{agentName} 是 AI，可能出错。",
+
+ "Tx5hMXhhuc": "连接器建议已在你的 Claude 设置中关闭。",
+
+ "lhGaq9G2iY": "这些连接器均不对你的账户可用。",
+
+ "klByISKGx4": "无法连接连接器目录。稍后重试。",
+
+ "3bRObCyQzL": "复制",
+
+ "x5e1I7w99K": "下载",
+
+ "gfF4dohJVH": "嗨，我是 {name}。",
+
+ "gTkkTzwkAu": "连接你的日历、收件箱、计划——我会记住。",
+
+ "itcVyxzuZV": "收到 {name}。",
+
+ "RPLON+b1is": "收到 {names}。",
+
+ "QApyeVexpr": "无法连接 {name}。稍后重试。",
+
+ "ZD4OQwaydn": "{name} 发了一条消息。连接选项已关闭，接下来是问候语。",
+
+ "8ZApKl0+qj": "我们开始吧",
+
+ "QNzMLaaUCY": "嗨 {name}！我是你的 24/7 私人助手。给我发消息就能办事。",
+
+ "2qwBqptP9y": "嗨！我是你的 24/7 私人助手。给我发消息就能办事。",
+
+ "r/ouC1qwfv": "这是大家常先交给我的事。点一个，或直接告诉我你的。",
+
+ "FwxQR9LdKf": "每日简报",
+
+ "6//6lzaC2O": "每天早上 8 点，发我当天的会议和需要我回复的事项",
+
+ "cUle/Lfi0l": "掌握 Slack、邮件和日历",
+
+ "GG4/oEIWF3": "Slack 上有人等我回复时通知我",
+
+ "qe+TsCwayq": "实时页面或仪表板",
+
+ "NwndOmkz5g": "给我做一个跟踪我待处理 CR 和审核者的页面",
+
+ "v8hfVKVJIH": "研究和学习任何东西",
+
+ "s2iXmJH+O7": "用 5 条要点给我解释 speculative decoding，假设我是 PM",
+
+ "QQzq/g85xm": "为会议做准备",
+
+ "US/J7pkQtf": "为我的下一个 1:1 做准备",
+
+ "92UIR55+NC": "报销一笔收据",
+
+ "UCWVG3sEdq": "这是我午餐的收据，放到 Benepass 里",
+
+ "YDcnLtPGG3": "“{example}”",
+
+ "bTwQ4Qf0G+": "作为你的消息发送",
+
+ "JHQ2otvYRj": "先问的事项",
+
+ "7Lol9femIO": "把这个发给 Aibo 团队？",
+
+ "ph3Ah4pvTa": "以你的名字和应用信息将此文本发送到 #aibo-feedback——一个 Anthropic 所有人可见的 Slack 频道。<link>了解更多</link>",
+
+ "NBSES31K7c": "详细了解 Anthropic 如何使用反馈",
+
+ "2xeuw5iUDp": "发送报告",
+
+ "8BGtJKMcAH": "编辑报告",
+
+ "HKQEQcxvmy": "已发送给 Aibo 团队",
+
+ "lC3+lp/R+c": "无法从此账户发送报告。",
+
+ "eJyFZ7ybxc": "待发送的问题报告：{body}",
+
+ "KWiJlyfbAG": "正在发送问题报告：{body}",
+
+ "rwh7VANFK7": "问题报告已发送：{body}",
+
+ "YDzuhIUj+J": "问题报告未发送，重试：{body}",
+
+ "4hJ40LNTZv": "问题报告，无法从此账户发送：{body}",
+
+ "4QjzcTZsIp": "被阻止的网站",
+
+ "yPgnbLXksk": "登录失败",
+
+ "Aeb+RYFLnu": "连接器问题",
+
+ "QzepmCz2dY": "浏览器问题",
+
+ "AiX8dWbmjH": "其他问题",
+
+ "Gtr0RobgQS": "描述问题",
+
+ "Jm6lThRjJJ": "{count, plural, one {还剩 # 个字符} other {还剩 # 个字符}}",
+
+ "bVeRig5DMk": "{count, plural, one {超出上限 # 个字符} other {超出上限 # 个字符}}",
+
+ "MpNS/KdD1J": "等待空闲槽位…",
+
+ "oOEY0S7i+v": "仍在处理，比平时久…",
+
+ "BAR5K1/jme": "仍在继续，当前较慢…",
+
+ "XAnqYItlCE": "正在使用备用模型…",
+
+ "8OHSHY98mN": "遇到繁忙期。{minutes} 分钟后重试",
+
+ "FmgHECtuMZ": "遇到繁忙期",
+
+ "76yyTmTH1I": "Aibo 那边出了点问题。{minutes} 分钟后重试",
+
+ "z2X8DcheNW": "Aibo 那边出了点问题",
+
+ "IunFQ702Zo": "中途出了点问题",
+
+ "LSCJR1JOxk": "耗时太长。{minutes} 分钟后重试",
+
+ "7nPmq5LHXL": "耗时太长",
+
+ "UkDKlMz+14": "已达用量上限。重置后重试",
+
+ "KY5CkW/kSb": "Aibo 无法为此次启动",
+
+ "Hhmk63Z0og": "Aibo 中途崩溃",
+
+ "d052BrQO0A": "Aibo 在完成前被中断",
+
+ "pqaEvmDNT1": "Aibo 在开始前卡住",
+
+ "3SzYyRza8o": "Aibo 无法登录它需要的东西",
+
+ "nMYaj7lwXb": "Aibo 没有回答此项",
+
+ "NbtSrVonQ0": "Aibo 在此项上卡住",
+
+ "oNxIj192h4": "你的组织已达到用量上限",
+
+ "bCdlIYTpxC": "需要更多用量才能继续",
+
+ "h7UzyhLC0J": "此账户没有 Aibo 访问权限",
+
+ "aVI8lJpkVC": "Aibo 无法处理此请求",
+
+ "khxO5cekPk": "此对话对 Aibo 来说太长，无法继续",
+
+ "qiJxr12nBx": "Aibo 拒绝了此请求",
+
+ "jwJcb6/YYv": "Aibo 的模型当前不可用",
+
+ "t+Zq48MY6K": "Aibo 无法完成此项",
+
+ "d/fRcX9oUo": "已读",
+
+ "fkQdQ2tPuU": "已编辑",
+
+ "6NbD/n3u4g": "{status}，已编辑",
+
+ "FfYncz/2Rt": "一个助手接手了该会话，因此此内容转到时间线。",
+
+ "kVFQQ6TlMN": "关闭会话",
+
+ "ZyxBgoGVDp": "在会话中回复",
+
+ "7d3Ol8c3Q/": "Aibo 找到了能帮上忙的连接器。",
+
+ "IFfJSXR5QU": "查看建议",
+
+ "++OewjJEMZ": "查看建议的内容",
+
+ "alo1jWVibp": "正在使用 {name}",
+
+ "vJM7Fr4sSw": "无连接器",
+
+ "cjeTSAlC0G": "忽略",
+
+ "mTIyKRsbUd": "Aibo 想使用你的大致位置",
+
+ "QmPXyF1DjV": "你的城市、地区、邮编和国家，绝非精确位置。在此允许后 Aibo 也可在后续请求中使用。可随时在设置中关闭。",
+
+ "wS9nxvUj2p": "正在允许",
+
+ "RVBoyorHH2": "位置共享已开启。Aibo 使用你下次在手机上打开时共享的区域。",
+
+ "LveDpTymF7": "未共享",
+
+ "XjXgktzT8T": "无法共享你的位置。重试。",
+
+ "Ua2lVpC/vX": "此请求已过期。",
+
+ "hXM8EH1y8r": "位置共享在此处不可用。",
+
+ "zcuauJO5Z+": "{heading}。{state}",
+
+ "/ZXFzsrExt": "允许 或 暂不",
+
+ "GmzDwerBon": "正在检查位置共享",
+
+ "Gcym0KIRGF": "正在拒绝",
+
+ "HwszUcSJai": "正在开启位置共享",
+
+ "90RFzZcgYM": "正在拒绝此请求",
+
+ "IKjyPZvBgX": "无法删除页面。重试。",
+
+ "bxSIZYtP0c": "无法置顶页面。重试。",
+
+ "4FwapUVsTU": "无法取消置顶页面。重试。",
+
+ "kByWRdalMV": "来自 {name}",
+
+ "Q81wL0DFAN": "点一下回答：{answers}",
+
+ "3fhoOp9Tdz": "作为你的回复发送",
+
+ "Ao4JUVtkze": "{agentName} 正在输入",
+
+ "ccD5U9ng3n": "我可以规划你的一周。",
+
+ "akXQBzcozk": "我可以管理你的日历。",
+
+ "uMYfsu3naF": "我可以为你执行操作。",
+
+ "7Zy3mbY/2w": "我可以记住重要的事。",
+
+ "BP9CP8ySNC": "我可以制作文档和计划。",
+
+ "jWvR0YLCVl": "像给任何人发消息一样给我发。",
+
+ "SpY7Bg1eR+": "设置 Aibo",
+
+ "4crsbUuT/3": "正在设置你的 Aibo…",
+
+ "XE7ZcFOe00": "比平时花的时间长…",
+
+ "KpkYDGBH9H": "Aibo 在手机上体验最佳。下载应用，随时随地发消息。",
+
+ "4nogSAIAuQ": "已置顶到页面",
+
+ "ULqcBrwb9O": "页面",
+
+ "KG0kj4UzaY": "添加到标签栏",
+
+ "IJPigBtTTK": "标签栏已满",
+
+ "w5tOPRDKVF": "从标签栏移除",
+
+ "s336tTbbWu": "已添加到标签栏",
+
+ "fenE1wihqJ": "已从标签栏移除",
+
+ "l/bQ57Nnne": "{title} 页面",
+
+ "3QlMqV02YS": "已置顶",
+
+ "zW8D9fZXM4": "你的页面",
+
+ "WhF+UTRQAR": "你的页面，{count} 条新",
+
+ "26GRoh+8PM": "刚刚创建",
+
+ "F5yOEbbtq2": "页面，{time}",
+
+ "JTF6ojT0K3": "文档，{time}",
+
+ "up/8RGi3+C": "Aibo 发布的页面会显示在此处。",
+
+ "lPgoWS5JGN": "打开页面。",
+
+ "NmTCAGOlaR": "删除页面？",
+
+ "y9WaxuCBnJ": "永久移除此页面。无法撤销。",
+
+ "JrpsvKk4yO": "{title} 的更多选项",
+
+ "hYcLEW7fJ8": "正在加载更多页面",
+
+ "ZpSExArUTV": "加载更多页面",
+
+ "dpGa57NptR": "只有你能看到此页面",
+
+ "dHM5O35ve7": "添加 appifact",
+
+ "Ka5NhQ6Yij": "显示让 Aibo 制作该页面的消息；再次点按添加会发送并返回对话。",
+
+ "hs8SneTlVw": "显示让 Aibo 制作该页面的消息；再次点按添加会发送。",
+
+ "WrMV9EkOH2": "每日待办",
+
+ "Mf60qDk5zv": "今日列表，每天早上刷新",
+
+ "B4v9P3JOvC": "邮件整理",
+
+ "2oBVJXdgwh": "需要回复的，按紧急度排序",
+
+ "uVGct0DTg7": "日历调度器",
+
+ "USpgIO4m68": "本周空闲时段，随时可提供",
+
+ "Uye/pCxMXB": "一天开始前的概览",
+
+ "Z33f0rG0hE": "报销归档",
+
+ "aLxwxg+iBy": "来自收件箱的收据，逐项列出",
+
+ "8cRZlbXecc": "站会摘要",
+
+ "xGP5NEnBR0": "你做了什么、下一步是什么、什么被卡住",
+
+ "rKNVxUHAXW": "PR 关注器",
+
+ "qQlMhGzjff": "你待处理的 PR 及其审核",
+
+ "sktAG6vtCp": "新闻订阅",
+
+ "nXi02oOP8z": "你想看的资讯，每天一次",
+
+ "v+rWWHhnpE": "会议笔记",
+
+ "P3cocwK2ni": "今日会议的笔记和待办",
+
+ "TOLGzIKRkW": "出差关注器",
+
+ "5PCSUkeuen": "即将到来的行程、航班和变更",
+
+ "Bbkm3uDbRu": "本周回顾，每周五",
+
+ "cUFTlr1fMD": "Aibo",
+
+ "CxfKLCZGDz": "页面",
+
+ "bJtvj+6N4S": "{count, plural, one {{count} 个新页面} other {{count} 个新页面}}",
+
+ "ueGCR+0uFW": "标签页",
+
+ "JFemFaR8kb": "显示任务",
+
+ "HgjyO727wQ": "隐藏任务",
+
+ "vuxEtPIC5b": "显示页面",
+
+ "jIhScdETkb": "隐藏页面",
+
+ "EtjNsFSrAJ": "调整侧边栏",
+
+ "sF4uUs2neB": "先关闭此表单",
+
+ "cZha/VHT6L": "无法发送你的回答。重试。",
+
+ "JvJV4AspXt": "此请求已不再开放",
+
+ "AThrfLtX6J": "此请求不提供「批准」，因此无法点按允许。你可以拒绝，或告诉 Claude 该怎么做。",
+
+ "cCY0Nz1BN0": "权限请求：{title}。请在下方批准或拒绝。",
+
+ "SByrMhm17w": "权限请求：{title}。在下方拒绝。",
+
+ "uLmQmuPypz": "此请求无其他详情",
+
+ "ZukCnaC0ju": "权限请求：{title}。此请求无其他详情。在下方批准或拒绝。",
+
+ "BrAGjChvEd": "权限请求：{title}。已批准。",
+
+ "H08HglwNFJ": "权限请求：{title}。已拒绝。",
+
+ "1MnvcYVNc/": "权限请求：{title}。已不再开放。",
+
+ "+8Stwd6Ri7": "无法打开此页面",
+
+ "QMnvusMKQl": "它可能已被删除。重试，或从标签栏移除它。",
+
+ "btc8pidSWH": "建议",
+
+ "q2SBrDIszy": "无法编辑消息",
+
+ "X3uHFqp8MD": "此消息无法再编辑",
+
+ "nLwKxPdeCy": "Claude 正忙。稍等再发送。",
+
+ "WgLvyohS4F": "未发送成功。你的消息未保存——请重新发送。",
+
+ "KOD/IAe2tu": "无法更新你的回答。重试。",
+
+ "eYz8p4gmu6": "无法删除你的消息。重试。",
+
+ "tbBYqyBUY2": "查看文档",
+
+ "QjrObX3IAw": "过大，无法显示——{n, number} 个字符",
+
+ "x+I9oPD9kV": "查看原始内容",
+
+ "S++WdBsywt": "展开阅读",
+
+ "AE4K8eozaQ": "… 还有 {n, plural, one {# 行} other {# 行}}",
+
+ "moevKg1AkV": "严重级别",
+
+ "ZBZfPQICJV": "高级别",
+
+ "Tg5Z1QfYcl": "中级别",
+
+ "XKN3/Spkmz": "低级别",
+
+ "dMakafR5Ag": "此环境尚不支持按体验重置服务器——仅清除了本地状态。有服务端冷却或曝光限制的体验仍会被过滤。在按体验端点部署前，使用下方的「重置所有体验数据」按钮清除服务端状态。",
+
+ "cG9QCAO7ln": "无法为此项重置服务器曝光——仅清除了本地状态。如果体验仍被过滤，使用下方的「重置所有体验数据」按钮。",
+
+ "kT2330ZLic": "重置体验数据失败",
+
+ "AKAFVoLnAA": "这是 {login} 的个人账户——只有他们能链接。",
+
+ "HMHhwuzWtx": "你需要在 GitHub 上是 {login} 的所有者才能链接。",
+
+ "QlSw2Nct6O": "你的 IP 不在 {login} 的 GitHub 允许列表中。",
+
+ "JG92nyhvYS": "暂时无法验证你对 {login} 的访问。稍后重试。",
+
+ "3m6ScQimzr": "{login} 暂时无法链接。",
+
+ "hV7g8pNqS8": "1D",
+
+ "xB2fZmKqL4": "1W",
+
+ "tQ9kXrHwM6": "1M",
+
+ "dV8rAsOwT1": "3M",
+
+ "yP3mVnJsN2": "1Y",
+
+ "wK2jUmGrD5": "周至今",
+
+ "zR4nWoKtP7": "月至今",
+
+ "aS5oXpLuQ8": "季至今",
+
+ "bT6pYqMvR9": "年至今",
+
+ "Uwm8gE/+aB": "地址过多。移除一些以保存。",
+
+ "tnEwCCZw4U": "仅为我连接",
+
+ "oY+Si01Dpv": "重新授权",
+
+ "BI2KQNO8Zj": "获取 Claude 桌面版",
+
+ "BqleO0R1zt": "正在卸载…",
+
+ "RVQlUy+/6a": "不兼容",
+
+ "BU+ZRR4J1j": "正在重新连接。此对话可能暂时过时，将自动刷新。",
+
+ "OX85WtACMI": "{count, plural, one {# 条消息待确认，状态稍后更新。} other {# 条消息待确认，状态稍后更新。}}",
+
+ "i8RNGoKW6i": "你的消息正在等待上一步完成，完成后会自动发送。",
+
+ "gHca9fYRn2": "已断开。正在重试",
+
+ "BEzvrl6Y5B": "{seconds, plural, one {# 秒后…} other {# 秒后…}}",
+
+ "TAamj1RdaN": "会话已过期。重新登录以继续。",
+
+ "gKRbMt7w1S": "无法确认对此对话的访问。刷新页面以重新检查。",
+
+ "1u03KsXXLL": "此对话已停止更新。刷新页面重试。",
+
+ "AJ5f0qF1uk": "此对话无法再接收新消息。开始新对话以继续。",
+
+ "R9rSNXVHKf": "已链接到此电脑，但它的文件和应用可能在此对话中不可用。如果不可用，开始新对话。",
+
+ "G3afgUujgG": "Claude 正在等你的回答，因此文件夹未被添加。先回答，再重新添加文件夹。",
+
+ "UWsjkJvpYR": "暂时无法链接此电脑：Claude 看起来仍忙。一分钟后重试。",
+
+ "BHI8l9O/jB": "暂时无法链接此电脑：Claude 看起来仍忙。一分钟后重新添加文件夹。",
+
+ "+bxZl1dk4t": "另一台电脑先被链接，因此这台未被链接。",
+
+ "oEqZL2R7ZR": "另一台电脑先被链接，因此文件夹未被添加。从那台电脑上的 Claude 桌面应用添加文件夹，或在此开始新对话。",
+
+ "zNwa0MQh/f": "无法链接此电脑：它的时钟看起来不对。检查日期和时间设置后重试。",
+
+ "Pqi/bTTTNJ": "无法链接此电脑：它的时钟看起来不对。检查日期和时间设置后重新添加文件夹。",
+
+ "DP+nX1EnG2": "无法链接此电脑：Claude 不再识别它。重启 Claude 桌面应用后重试。",
+
+ "+8RATjAV16": "无法链接此电脑：Claude 不再识别它。重启 Claude 桌面应用后重新添加文件夹。",
+
+ "UgdUmhULWj": "无法链接此电脑。稍后重试。",
+
+ "S7nmJRNhoM": "无法链接此电脑。稍后重新添加文件夹。",
+
+ "OZCw7SLDBU": "无法连接。检查网络后重试。",
+
+ "vU/6FJhtTK": "无法连接。检查网络后重新添加文件夹。",
+
+ "d0AhWYpyCW": "无法链接此电脑：需要先重新登录。重新登录后重试链接。",
+
+ "z4Zvvnbke9": "无法链接此电脑：需要先重新登录。重新登录回来后重新添加文件夹。",
+
+ "RWlYn7wE3H": "你的组织已关闭 Claude 连接电脑的功能。请联系管理员重新开启。",
+
+ "B8EBXY3bRi": "你的组织已关闭 Claude 连接电脑的功能，因此文件夹未被添加。请联系管理员重新开启。",
+
+ "WJKt7JAeKx": "此对话的设置方式无法转到电脑。开始新对话以使用此电脑的文件和应用。",
+
+ "EiDPgJgSsh": "此对话的设置方式无法转到电脑，因此文件夹未被添加。开始新对话以添加。",
+
+ "HOyecxzuwX": "此会话已结束，无法链接到电脑。开始新对话以使用此电脑的文件和应用。",
+
+ "L4yk8ubRq6": "此会话已结束，因此文件夹未被添加。开始新对话以添加。",
+
+ "KJgEvNz6Sb": "无法链接此电脑。开始新对话以使用其文件和应用。",
+
+ "uxQ0liaCj7": "无法链接此电脑，因此文件夹未被添加。开始新对话以添加。",
+
+ "l8Y1i6QWYL": "此对话未链接到此电脑。开始新对话以使用此电脑上的文件和应用。",
+
+ "0QMisNQ3ZG": "此对话链接到另一台电脑。从那台电脑上的 Claude 桌面应用添加文件夹，或在此开始新对话。",
+
+ "+FUkV2tjzP": "此对话未链接到此电脑，因此文件夹未被添加。开始新对话以使用此电脑上的文件和应用。",
+
+ "QJr2thbaXZ": "此对话链接到另一台电脑，因此文件夹未被添加。从那台电脑上的 Claude 桌面应用添加，或在此开始新对话。",
+
+ "vkc239WMc6": "无法添加文件夹。稍后重试。",
+
+ "XlOCJg9pVU": "此对话无法使用你电脑上的文件夹，因此文件夹未被添加。",
+
+ "AA+tWQduRS": "你选择的文件夹未被添加。用「添加文件夹」重新添加。",
+
+ "AivxWAdkUs": "Claude 完成此步骤后可用",
+
+ "mANS7A92qZ": "让 Claude 使用你的内置浏览器",
+
+ "G63ECSLt8d": "此对话在此电脑上运行后可用",
+
+ "iI0eElzaMq": "将此对话链接到此电脑",
+
+ "y8ca1w0GbL": "桌面版",
+
+ "vLlUqBJsKa": "{folder}，与此对话共享",
+
+ "WMRrgSmpN4": "{folder}，在 {computer} 上：{path}",
+
+ "0dKC7WHh6G": "正在共享…",
+
+ "eATv64lVVT": "正在与此对话共享…",
+
+ "ZQsvxfYVUB": "在 {computer} 上",
+
+ "ATCMmCS2rV": "此对话所在电脑上的 Claude 桌面版已切换到 {otherOrg}。切换到 {currentOrg} 以重新连接。",
+
+ "eIDZJnob8B": "Claude",
+
+ "TS3Q8/8tb5": "Claude 需要你的许可才能继续使用你的电脑",
+
+ "Mox+eJNywA": "此项目对你的账户不可用，因此消息未发送。向项目所有者申请访问。",
+
+ "2ZET1qGi1L": "你的消息未发送，因为 Claude 仍在此对话中工作。停止响应或回答 Claude 的问题后重试。",
+
+ "Emi0uaUest": "此对话无法打开该类型文件。移除后发送消息。",
+
+ "GO0cgd6ZGm": "仅可编辑或重试此对话中你最近的一条消息。",
+
+ "QJ72l5ggcJ": "编辑和重试此处尚不可用。发送新消息以继续。",
+
+ "KzX31O27GK": "你刚发送的一条消息仍在上传文件。等它发送后再重试或编辑更早的消息。",
+
+ "g+Pu3dB1KN": "Claude 在等你的回复。先回复 Claude，再重试或编辑更早的消息。",
+
+ "xjyctTXaP/": "Claude 正在为此任务做准备。等 Claude 完成后再重试或编辑更早的消息。",
+
+ "xwhaDTivuH": "Claude 仍在响应。停止响应后再重试或编辑更早的消息。",
+
+ "ryA6ScjQbV": "此对话使用 {computer}",
+
+ "5CmgJHIO2e": "此对话链接到另一台电脑",
+
+ "9WGytSXIY0": "规划、搜索并撰写多步研究",
+
+ "U9MN2O31pg": "研究功能现与你的 skills 一起。随时输入 {slashKey} 使用。",
+
+ "3EM322GLLB": "研究提示",
+
+ "IoKcDVKX1i": "你的工作在这里",
+
+ "JakB9N+DrK": "此对话的文件、进度和输出在活动面板中。打开看看。",
+
+ "k7Nkw7FODu": "{count, plural, one {来自 {serverName} 的一个工具无法在此对话中提供。} other {来自 {serverName} 的 # 个工具无法在此对话中提供。}}",
+
+ "Vc2Y77X1UL": "正在为此任务做准备",
+
+ "W3H1l8oZ6o": "Claude 准备中，无法停止",
+
+ "zq9sjtsgiN": "写入 {fileName} 失败",
+
+ "p9pE+IOnwm": "读取 {fileName} 失败",
+
+ "iOhyWWPbWU": "编辑 {fileName} 失败",
+
+ "/PLrirb8c8": "已保存 {fileName}",
+
+ "Z69GOUbPpd": "启动中…",
+
+ "k9HubEdLd2": "正在重新连接到此对话——稍后重试编辑。",
+
+ "cHQbH6smy7": "Claude 在此对话中使用的登录已过期。",
+
+ "SCqsExXsBc": "在此设备上确认是你，以便 Claude 继续。",
+
+ "soBzsgEeB0": "问题 {n}",
+
+ "Ki7MwYU094": "问题详情",
+
+ "zfAO2Gnwo7": "回答允许 Claude 在此签到中使用 AskUserQuestion。",
+
+ "NjFEJF6JJD": "完整输入",
+
+ "liH5Z7H3A3": "完整工具输入",
+
+ "GlN0x+FqpE": "Claude 有一个问题",
+
+ "NS340KjKCv": "Claude 问了一个此对话无法显示的问题。",
+
+ "tlthVg9aDW": "授予上方的 macOS 权限以继续。",
+
+ "xSqwFIi+9R": "开启上方的电脑使用以继续。",
+
+ "e0UL00lZWl": "电脑使用批准",
+
+ "Yy2L8p72y8": "{connector} 需要重新连接",
+
+ "O7+EJa5zLZ": "一个连接器需要重新连接",
+
+ "vE9ff3CtPJ": "重新连接请求",
+
+ "iUPFcT8L2r": "无法在此对话中完成；会自动清除",
+
+ "ZGJTwvfQso": "已重新连接",
+
+ "X6mlag3Oz/": "新消息可使用它",
+
+ "+/QeCCwl8q": "此对话的一个连接器在你重新连接前无法运行（对话照常工作）。",
+
+ "YY553pvMLP": "重新连接",
+
+ "qJEdvJ1ZVs": "登录请求",
+
+ "Khgnns562a": "验证请求",
+
+ "qdvjIp9J1U": "无法在此对话中完成",
+
+ "LpSkETnJxY": "已跳过登录",
+
+ "BupSsgl9kc": "已跳过验证",
+
+ "oXMlvK1YdB": "Claude 仅在对话中继续",
+
+ "00wbtZM4RD": "登录超时",
+
+ "D/c85EUU3d": "验证超时",
+
+ "Mqx+YWhBX2": "准备好后让 Claude 重试",
+
+ "U85uHiN3uz": "正在恢复 Claude 的工作…",
+
+ "s08IOag3PX": "正在恢复…",
+
+ "VYFZKlGHIU": "在此对话中恢复 Claude 的工作",
+
+ "jejMfPZZcs": "此任务需要近期登录，而你的登录已有一段时间。Claude 会从上次中断处继续。",
+
+ "YvSFSBBBzI": "恢复 Claude 工作的登录请求",
+
+ "jMZK9Hf2R0": "设备验证请求",
+
+ "k4NythW6Uc": "正在确认是你",
+
+ "7GyLuk/BYm": "按浏览器的提示操作，或取消返回此处。",
+
+ "71i5gT8MzB": "未及时完成。重试，或改为登录。",
+
+ "O1GKM54RT3": "已取消。重试，或改为登录。",
+
+ "FmezZ0deT5": "在打开的窗口中登录。如未自动继续，按「继续」。",
+
+ "nPz/wwhfeV": "在打开的窗口中验证。如未自动继续，按「继续」。",
+
+ "UiuEUdJX7x": "显示登录窗口",
+
+ "FCqBBgQhCV": "无法用那次登录恢复 Claude 的工作。重新登录，或再试一次。",
+
+ "AyNQH4dVB8": "那次登录未完成。重新登录。",
+
+ "6cxeVmwuHD": "正在完成登录… 如未自动继续，按「继续」。",
+
+ "KpiXuhUtRg": "正在完成验证… 重新登录后按「继续」。",
+
+ "/pvOM0V1EK": "重新验证",
+
+ "cI6qhnoGgj": "此处不支持设备验证。从已验证的设备继续，或暂时跳过。",
+
+ "dJ2CWgTfn2": "在此设备继续",
+
+ "7vEqr3RQLQ": "{connector} 需要授权",
+
+ "lpfp568IkC": "一个连接器需要授权",
+
+ "lUhsY2yy6a": "连接请求",
+
+ "c9VBsoem/O": "无法在此对话中完成；会自动清除",
+
+ "NAepnjGGMO": "已授权",
+
+ "Kk4zBp8z43": "Claude 正在继续…",
+
+ "/Iw6CxE9bP": "你连接后 Claude 会继续。",
+
+ "1tYHERJ7z7": "浏览器网站访问批准",
+
+ "X5aA7hHWbA": "<was>原 </was>{previous} <arrow>→</arrow> <now>现 </now>{next}",
+
+ "GvoMTxJFUT": "<set>设为 </set>{value}",
+
+ "voOGO58/A0": "{kind, select, routines {正在查找此更改所属的例程…} other {正在查找此更改所属的定时任务…}}",
+
+ "DHkiWpMujV": "完成时推送通知和邮件",
+
+ "zbvxIC0kaU": "完成时推送通知",
+
+ "jBZbEXT1IL": "完成时邮件",
+
+ "opbnVjG1D8": "Claude 想更新 {routine}",
+
+ "MGZWUbPWkK": "Claude 想更新一个 {routine}",
+
+ "6fZigE3tYX": "Claude 想创建一个 {routine}",
+
+ "pJ8DpGISP3": "{kind, select, routines {更新例程批准} other {更新定时任务批准}}",
+
+ "ub1FwrU/N5": "{kind, select, routines {创建例程批准} other {创建定时任务批准}}",
+
+ "i69OKlhsLx": "你的上一条消息仍在发送。",
+
+ "9DKYXViMMB": "此类对话此处尚不可用。",
+
+ "aEhO0Q3/uI": "此对话在发送前被重置。你可以重新发送。",
+
+ "sXFjB9fp4i": "你的消息无法发送。可以重试。",
+
+ "IvxtElTvYj": "页面加载时你的账户变了，因此消息未发送。",
+
+ "kfiAx5YH+H": "切回聊天和 Cowork？",
+
+ "t2bgC50gp7": "未删除任何内容。你的对话仍在聊天和 Cowork 里。走之前，什么不好用？",
+
+ "jMg6A9RbIq": "未删除任何内容。你的对话仍在聊天和 Cowork 里。",
+
+ "R0A1RzUjA0": "新版 Claude 体验如何？",
+
+ "ZCRl80sHcQ": "什么好用什么不好用？反馈直达开发团队。",
+
+ "Jch/6Qdk2X": "为什么切回？",
+
+ "TXvkjRa4en": "只是测试",
+
+ "7u/T/X2BEP": "你将在 {hours, plural, one {# 小时} other {# 小时}}后重新开启。",
+
+ "LoxFJ4QxAY": "测试或调试，没关系。",
+
+ "EBljGjNZY1": "有些地方不对",
+
+ "b/N//Y48ff": "告诉我们发生了什么，以便我们修复。",
+
+ "a69nyetBTU": "切回 {hours, plural, one {# 小时} other {# 小时}}",
+
+ "s3Zrq32xDh": "是，只是测试——切回",
+
+ "qttlzGSPxj": "什么促使你这样做？",
+
+ "6FDzvSTMnL": "Cowork 中缺少东西",
+
+ "5Z5d+C3blJ": "更慢",
+
+ "RtwzV63NXb": "有东西坏了",
+
+ "YnlIM9ilZu": "更喜欢旧布局",
+
+ "902KdDiGYQ": "其他",
+
+ "oYs6CxbChv": "详情",
+
+ "XdkyjT0PHr": "怎么回事？",
+
+ "SqbOeJhGcX": "发生了什么？（可选）",
+
+ "eX4XCo5mcR": "发生了什么？",
+
+ "hoNI5vevn9": "要切回，选一个原因并说明发生了什么。",
+
+ "VlKKF/S4/j": "要切回，选一个原因。",
+
+ "2BFSAikvWa": "要切回，说明发生了什么。",
+
+ "z1zpZF/83b": "至少 {min} 个词——目前已 {count} 个",
+
+ "58qFEbXGl0": "切回时发送给开发团队。",
+
+ "YJHL7RmN4c": "取消",
+
+ "6hKEAuq3Hz": "发送反馈",
+
+ "wXEeNsy0Hz": "切回",
+
+ "3C8+zgR+aB": "发送并切回",
+
+ "YPH/qwukF9": "谢谢。你的反馈已送达团队。",
+
+ "YuTcQ7UXgu": "无法发送。重试？",
+
+ "UwSiYlvTkq": "无法从此处发送。",
+
+ "r2kfMyS1ru": "抢先体验",
+
+ "kAVYzDpJHO": "试试新版 Claude",
+
+ "eflG5x281Q": "切回聊天和 Cowork",
+
+ "jnFlEF/t27": "未删除任何内容",
+
+ "9cOP+W/JEM": "分享反馈",
+
+ "6x/0wFN7yr": "告诉团队进展如何",
+
+ "dJrCsJHC59": "重新开启",
+
+ "Lkv84n/pzl": "聊天和 Cowork 再次合一",
+
+ "Fmsdl4LdwY": "一个地方处理简单问题和大型任务",
+
+ "fniZ1y+jXe": "聊天和 Cowork 现已合一。Claude 直接回答简单问题，并处理更大的任务——即使你离开了也没问题。",
+
+ "lJJdhX3GFN": "随时从这里切回。",
+
+ "Zh6zs4ILYV": "下一步",
+
+ "4n7YDdmfb9": "{current} / {total}",
+
+ "sQ2FO9URnm": "不再切换",
+
+ "8pE+VppdSa": "Cowork 开关已移除。直接说你想做什么，Claude 从同一个地方处理快速回答和长任务。",
+
+ "r3YIKKZBwY": "完成",
+
+ "mL7FkQ6n4c": "抢先体验已重新开启",
+
+ "aGjHjtfXSB": "我们已修复大家报告的大多数问题，因此新体验为你重新开启。",
+
+ "2Ukmq2LHgG": "你的测试切回已结束，因此你已回到新体验。",
+
+ "1bfd3lB/PI": "知道了",
+
+ "y8PDkcbQ1Q": "正在完成登录…",
+
+ "IjOWb5iKe4": "无法完成登录",
+
+ "6xhWzfY3bJ": "无法验证此浏览器",
+
+ "TM4a15JAuJ": "此窗口未登录",
+
+ "7NitjsUiBu": "登录到了其他账户",
+
+ "3SQTavylpA": "比预期耗时更长",
+
+ "XwrRZ9bfpz": "请稍等，你从对话发起的登录正在完成。",
+
+ "kpHyEF2d9J": "此窗口会自动关闭。Claude 正在你发起的对话中从中断处继续。",
+
+ "A2ytnWj7el": "Claude 正在你发起的对话中从中断处继续。你可以关闭此标签页或回到 Claude。",
+
+ "QTUvIwgsd/": "回到你的对话并按「继续」。此浏览器无法自动通知它。",
+
+ "3nMGBIvcSg": "关闭此窗口并从你的对话重新登录。",
+
+ "0pYjzopx5i": "关闭此窗口并从你的对话重新验证。验证必须在登录后几分钟内完成。",
+
+ "Q+gmDDl4XG": "关闭此窗口并从你的对话重新验证以重启登录。",
+
+ "Lnzyl2JqfO": "此次登录使用的账户与发起对话的不同，因此该对话未被恢复，此浏览器现在登录到了另一个账户。关闭此窗口，然后用对话使用的账户从对话重新登录。",
+
+ "3lqYx1ygKg": "此次登录使用的账户与发起对话的不同，因此该对话未被恢复，此浏览器现在登录到了另一个账户。关闭此窗口，然后用对话使用的账户从对话重新开始。",
+
+ "mHlzDmWiOn": "此次登录使用的账户与发起对话的不同，因此该对话未被恢复，此浏览器现在登录到了另一个账户。关闭此窗口，然后用对话使用的账户从对话重新验证。",
+
+ "8uRCcjIAhL": "你的账户未在此窗口加载。关闭它并从你的对话重新登录，或如果你已完成登录，在那里按「继续」。",
+
+ "kiGdLAP9Es": "你的账户未在此窗口加载。关闭它并从你的对话重新验证，或如果你已完成登录，在那里按「继续」。",
+
+ "8SL5m2kJtd": "此页面完成从 Claude 对话发起的登录，而该登录已不再等待。你可以关闭此窗口；如果对话仍在询问，从那里重新开始。",
+
+ "KDpE9J0+Xv": "助手 agent",
+
+ "NTiXp8jAL2": "另一个 agent",
+
+ "zA+ZpN+vgK": "例程",
+
+ "1hezfovEIv": "{name}（在新标签页打开）",
+
+ "9MHCeyyO3i": "附件已被移除，因为未完成的语音对话后草稿对话被重置。请重新附加。",
+
+ "GJvQ9rNcBs": "信任并恢复",
+
+ "w+qTzeepxX": "适合大多数场景",
+
+ "4N8a6wReLf": "适合数学和编程挑战",
+
+ "2qTZeZCPue": "分析工具",
+
+ "sA9kR2u6VC": "Claude 可以编写并运行代码来处理数据、运行分析并实时生成数据可视化。",
+
+ "N+VJI9Z0SU": "上传 CSV，让 Claude 高精度分析量化数据并创建交互式数据可视化。",
+
+ "6eNkKSj+Er": "联网搜索",
+
+ "hahKOhzAYF": "Claude 可以搜索互联网以提供更新、更相关的回复。话题需要最新信息时，Claude 会自动判断是否使用联网搜索。仅在 Claude 3.7 Sonnet 下可用。",
+
+ "GoDyM43G4X": "Claude 会在合适时利用网络访问改进回答。",
+
+ "2EcGZn58SU": "自动思考",
+
+ "eAZhflTduv": "按复杂度匹配思考",
+
+ "u8n5HzNZ2R": "扩展思考",
+
+ "aWuhH8qI9/": "复杂任务思考更久",
+
+ "u8fFNy1Mu4": "即时",
+
+ "QimMWHgE5g": "立刻回复",
+
+ "NKydG2KArY": "扩展",
+
+ "c42Iq1UBqb": "扩展",
+
+ "BDqDM65MnU": "自适应思考",
+
+ "MnpOJUobxY": "复杂任务时思考",
+
+ "B4Nw7coGbc": "自适应",
+
+ "zdSx1K4VL2": "简单问题快速回复",
+
+ "QQ2UzmdmNN": "轻量、日常任务",
+
+ "Ztf14WwmNM": "日常工作的均衡之选",
+
+ "0gtp5o1nEE": "复杂、细致的工作",
+
+ "oLD1YKsL8P": "最难的问题。耗时最长。",
+
+ "g8BKYKpvDv": "可为复杂任务思考",
+
+ "8iuHf335Ey": "始终使用深度推理",
+
+ "EpijVevLzK": "快速模式",
+
+ "6EhWLLZwj4": "开启快速模式",
+
+ "oAk189A0OS": "快速",
+
+ "mQRd+O9jEI": "组织默认",
+
+ "Yrtr74Rv+h": "应对你最棘手的挑战",
+
+ "LCyVJcnXTZ": "应对雄心勃勃的工作最强",
+
+ "4EGZ/Kv9qH": "日常任务最高效",
+
+ "n6XZvuhMVT": "快速回答最快",
+
+ "29OLd9bgWw": "Opus 比其他模型更快消耗用量上限",
+
+ "Zyu/cxL2/B": "消耗用量额度",
+
+ "Xads8RoR+/": "默认",
+
+ "RaZ/cp/eey": "可能消耗过多 token 导致响应时间长，可能触及 token 上限。仅谨慎用于最难的任务。",
+
+ "Xft0R8xbIB": "低",
+
+ "U0mtsR78v2": "中",
+
+ "vv9L/MN3/H": "高",
+
+ "HoZQmASaw3": "额外",
+
+ "Zk4EtKw26K": "最大",
+
+ "DvRKnnUSOG": "思考",
+
+ "4RgMF5iUDm": "扩展",
+
+ "PLBs+fqKwX": "关闭",
+
+ "dapWFrcWv4": "更高的投入意味着更详尽的回复，但耗时更长且更快消耗上限。",
+
+ "TJnVJ3CHzT": "Ant 工具",
+
+ "JxRTAGj5OB": "更多 Opus 用量*",
+
+ "message_limit_benefit_tools": "使用研究、联网搜索等工具",
+
+ "uK9wA9v6Z3": "无限制访问项目以组织对话和文档",
+
+ "Rve6Z5dM8k": "更多用量*",
+
+ "message_limit_benefit_code": "在终端中直接使用 Claude Code",
+
+ "message_limit_benefit_workspace": "集成 Google Workspace：邮件、日历和文档",
+
+ "message_limit_benefit_models": "完整访问包括 Opus 在内的最新 Claude 模型",
+
+ "message_limit_benefit_thinking": "复杂工作的扩展思考",
+
+ "WwXweMd3IE": "连接 Google Workspace：邮件、日历和文档"
+}

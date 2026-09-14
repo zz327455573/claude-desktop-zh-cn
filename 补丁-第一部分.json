@@ -1,0 +1,1433 @@
+{
+ "0B5K9Ew/CB": "显示此部分时出了点问题。",
+
+ "d1WltKbTnp": "页面这一部分出错了。重试一下，或返回你的提交列表。目录的其余部分仍可正常使用。",
+
+ "aBlCgm3+ee": "无法获取最新状态。",
+
+ "ZLga7f9bC0": "正在检查新提交…",
+
+ "cz93I84WP0": "{seconds} 秒后重试",
+
+ "GDyjwmazro": "检查新提交",
+
+ "wZO3pjz1Pu": "缺少 README",
+
+ "Svq/WmERVy": "README 太短",
+
+ "8sKzhjMOYs": "缺少许可证",
+
+ "c7sQjovRHF": "无图标",
+
+ "iHYpiqb3By": "无隐私政策链接",
+
+ "BRy0Us6KnF": "MCP headers 中含密钥",
+
+ "Ccs7hk20vW": "MCP 服务器 URL 为空",
+
+ "LpeXDvU85x": "MCP 服务器 URL 不是 https",
+
+ "zEDoir8Gk1": ".mcp.json 无法解析",
+
+ "PY1mrAehs8": "未锁定版本的 npx 启动器",
+
+ "kQM3xOqoSs": "未锁定版本的 uvx 启动器",
+
+ "1VfknscuMv": "标识符含非 ASCII 字符",
+
+ "orXIe2hH1W": "不允许外部来源",
+
+ "ZGDtwR0M5W": "本地组件：仅限 Claude Code",
+
+ "zaxH61UBPC": "检测到实验性 `directory` 字段",
+
+ "8BiI9PFJdL": "检测到 agent-plugins 清单",
+
+ "uiDnIc6ewI": "发布后名称已变更",
+
+ "60qboRt/62": "hooks.json 无效",
+
+ "rJf7KqD8r1": "路径超出插件目录",
+
+ "jE+7r8CV3P": "插件名称无效",
+
+ "Tj0WLbuRvw": "版本号不符合 semver",
+
+ "Ulh1aQSB+7": "Skill 缺少描述",
+
+ "eGc0PPjsg9": "Skill 描述过长",
+
+ "rA5zA0A7oP": "Hook 运行 shell 命令",
+
+ "UWf6GntSgQ": "包含可执行文件",
+
+ "8YgKYqUGq7": "未注册的 MCP 服务器",
+
+ "fm5H7SpFUn": "目录 slug 与 URL 不匹配",
+
+ "MmL+6vEiV4": "仓库包含多个插件",
+
+ "Go/54tFsgA": "名称已被占用",
+
+ "KuwYU0aXH5": "名称与已知品牌匹配",
+
+ "iEUMjAqxIf": "名称可能与现有条目混淆",
+
+ "FUobWyAvAW": "发布者名称可能与另一个混淆",
+
+ "qgyxdZWqDE": "仓库是 fork",
+
+ "B2z3jZVbCY": "名称等于某个 GitHub owner",
+
+ "4beLa5lcwa": "作者名待审核",
+
+ "IHqNtENDkO": "混淆的代码执行",
+
+ "4lwip+BCaA": "可能的数据外泄",
+
+ "qUbvarLJIA": "提示词注入内容",
+
+ "GLCP+HSkNo": "命名审核",
+
+ "zA3mk65U9t": "内容政策审核",
+
+ "1lSCDDxPME": "发布者身份审核",
+
+ "6G7g47g8Z5": "Fork 审核",
+
+ "Fxy5MsmorW": "已发布版本被标记",
+
+ "674uf2n4D9": "作者名审核",
+
+ "bxqSLsFYSR": "条目所有者不允许第三方插件",
+
+ "BeGqu3eXJd": "检查报告了问题",
+
+ "ntlGrgUyDY": "目录列表将 README.md 渲染为插件的描述，因此没有 README 的插件无法上架。",
+
+ "5u+FKK0Dok": "README 非常简短。写清楚插件做什么、怎么用、传输哪些数据，列表展示效果会更好。",
+
+ "ayNIjJNwXJ": "添加 LICENSE 文件或在 plugin.json 中设 `license` 字段，让安装者了解许可条款。",
+
+ "WBMqZWWC0T": "plugin.json 中未找到图标。列表会回退到你的 GitHub 头像（上传则为生成的占位图）。",
+
+ "c1AXlA2Pq7": "连接远程 MCP 服务器或 HTTP hook 的插件应提供隐私政策链接。在 plugin.json 支持该字段之前，我们在 README 中查找链接。",
+
+ "9HlpXXlzYX": ".mcp.json 的某个 header 是看起来像凭据的字面量值。插件中的所有内容都会分发给每个安装者。",
+
+ "2aJy/04UtE": "某个远程 MCP 服务器条目的 URL 为空。",
+
+ "wnBYExsCK0": "远程 MCP 服务器必须通过 https 访问。",
+
+ "RSiWAGMy6O": ".mcp.json 文件不是合法 JSON，无法从中读取任何 MCP 服务器。",
+
+ "vnFjr8ljah": "某个 MCP 服务器使用未锁定版本的 npx 启动，安装者将在安装时运行最新版本。",
+
+ "MNNaLO4eY/": "某个 MCP 服务器使用未锁定版本的 uvx 启动。",
+
+ "HYmu7olPeg": "stdio MCP 服务器、command hook 和 bin/ 文件需要本地运行时，因此仅能在 Claude Code 中使用。列表会注明这一点。",
+
+ "UBPb82t0fY": "hooks/hooks.json 不符合 hooks schema。",
+
+ "emYxk7tMAS": "plugin.json 中的某个路径指向插件目录之外。插件必须自包含。",
+
+ "HNMdWBDQIL": "插件名称为 kebab-case ASCII：字母、数字和连字符。",
+
+ "p354dRejXx": "此名称已由其他组织发布或预留。如果你认为自己拥有该名称，可在用不同名称提交后发起争议。",
+
+ "WPBgqwqTmZ": "该名称与现有条目或品牌高度相似。审核者会检查是否暗示关联关系。你的提交将被挂起而非拒绝。",
+
+ "mlCHLgii1c": "该名称匹配某个知名品牌。允许该品牌的已验证组织使用；否则由审核者决定。",
+
+ "l4uF2Et9zY": "允许 fork。列表会显示上游仓库以便用户区分。",
+
+ "da7l1eczt9": "上传无法证明作者名。在审核者批准声明的作者之前，你的组织将作为发布者显示。",
+
+ "pSFzWlJrf8": "扫描发现解码或下载并执行负载的代码。插件必须提供可读代码并直接调用。",
+
+ "dgyM5YDN4E": "扫描发现将本地文件或环境数据发送到远程主机的代码，超出插件声明的用途。",
+
+ "ShhFZGYGN/": "某个 skill 或 command 包含旨在覆盖用户意图或安全指引的指令。",
+
+ "9IxQzAVgzZ": "审核者正在检查插件或发布者名称。解决后会邮件通知你；此前发布的版本（如有）继续提供服务。",
+
+ "DYfuoQfaAl": "审核者正在对照目录内容政策检查此版本。",
+
+ "DlgBEz2bHW": "审核者正在确认列表上显示的发布者身份。",
+
+ "PjkR0EBkW6": "审核者正在确认此次上传在 plugin.json 中声明的作者名。",
+
+ "ztxtQE4ntV": "该目录条目所有者要求不捆绑第三方插件。审核者会跟进。",
+
+ "omJ0dFkmyw": "此服务器不在 Claude 目录中。它仍可安装，安装时会提示。仅在需要 OAuth 客户端凭据、静态 headers 或租户 URL 时才需注册。",
+
+ "LcERzZ0qfS": "该条目声明了 directory “{slug}”，但其 URL 并非该列表的服务器，因此会作为未注册服务器安装，审核者会被告知。",
+
+ "ULDbR7LgG+": "将 URL 指向列表的服务器，或去掉 `directory` 字段。",
+
+ "vWu52UJyXP": "引用一个 user_config 值（sensitive: true）或使用 OAuth 替代字面量 header。",
+
+ "lbUkKtDzyw": "锁定包版本，例如 `npx your-package@1.2.3`。",
+
+ "63j/3KyR5Z": "锁定包版本，例如 `uvx your-package==1.2.3`。",
+
+ "G1YtWjkFx3": "将 URL scheme 改为 https://。",
+
+ "Fg0Uqbz0HC": "在 plugin.json 中添加 `icon`，指向插件内的 SVG 或 512×512 PNG。",
+
+ "6eRCENyJhU": "已提交",
+
+ "Ru3bMuuAw0": "已达每日提交上限",
+
+ "1/ePNSfO2r": "验证次数过多",
+
+ "/MLIFD/jLP": "验证已过期",
+
+ "PtP38460N5": "先修复阻断性问题",
+
+ "o0NMfqiqJL": "版本尚未就绪",
+
+ "FoAWoJjX+v": "尚未发布任何内容",
+
+ "3o41o0nqfM": "刚刚检查过",
+
+ "O9stWMafbM": "来源不可更改",
+
+ "tNdtzKADJY": "尚无法提交",
+
+ "dX64aGjl5w": "无法删除已发布的插件",
+
+ "a7FjaaR48X": "已有更新版本在线",
+
+ "ft0aHzvVm6": "插件已下架",
+
+ "XgZAH4S/FO": "来源不匹配",
+
+ "c4pDBLkQHl": "提交已撤回",
+
+ "SMovhS1B30": "未找到版本",
+
+ "kdec6sZ+Af": "重新上架需审核",
+
+ "7ezxBe6UWr": "需要目录团队处理",
+
+ "VHPDYICs0g": "条目所有者不允许",
+
+ "EI4Ij/hRC7": "仓库访问被拒",
+
+ "xq6Jtn5Tg3": "你的会话已过期",
+
+ "Q2cQ0bDbrr": "你没有访问权限",
+
+ "i1tSnpLpb8": "未找到提交",
+
+ "KNiqWwg4Q0": "请求过于频繁",
+
+ "d3YSlpN7bq": "文件过大",
+
+ "Of41JpdjHV": "该请求未被接受",
+
+ "KVMrqmkTL7": "上游服务未响应",
+
+ "mhmU7a9bI6": "意外的响应",
+
+ "gHZQ5vFdOh": "无法连接目录服务",
+
+ "zY0RFRpmSl": "请求超时",
+
+ "YJN5GpK/qL": "此插件已有提交。如果它属于另一个组织且你拥有该仓库，请联系目录团队。",
+
+ "3icHeXurR1": "你的组织已达今日提交上限。明天再试。",
+
+ "3Od5PsFNj3": "等待 {seconds, plural, one {# 秒} other {# 秒}} 后再次验证。",
+
+ "1r0e2y1lVi": "稍后重试。推送到默认分支的更新仍会自动获取。",
+
+ "b1d89prgx5": "此提交缺少必要内容。修复阻断性问题后重试。",
+
+ "bQen3GkEGM": "已有版本在线。请先下架插件，再撤回。",
+
+ "O79cqtOUMQ": "你选择的版本比当前服务的版本更旧。",
+
+ "SHo4JbsIG8": "发布版本前请先重新上架插件。",
+
+ "XeEBHJ+NAa": "此报告基于的仓库或路径与该提交跟踪的不同。",
+
+ "v/hB8PtJ7e": "此提交已撤回。开始新的提交以继续。",
+
+ "U25HCwqXMz": "该版本在此提交上已不存在。",
+
+ "U/F0XbrOv/": "因此插件被标记，重新上架需审核。目录团队已收到通知。",
+
+ "OAiCMQgN0B": "开发者门户的这一部分仍在逐步推出。",
+
+ "uGgH3Y7wjs": "重新登录以继续处理你的提交。",
+
+ "YrC5V+ypjz": "此列表已被目录团队挂起（被标记的版本或他们执行的下架）。联系目录团队以发布或重新上架。",
+
+ "4Xk5vnGQHG": "该目录条目所有者不允许其他组织的插件链接到它。",
+
+ "5ml7v2CMwn": "无法确认你管理目录提交的权限。请让管理员检查你的角色，或切换账号。",
+
+ "6y84wD3OaK": "它可能已被撤回或属于另一个组织。",
+
+ "rmv4Gz3dRF": "压缩包超过上传上限。精简后重试。",
+
+ "XzQSLV3Z4n": "检查你输入的内容后重试。",
+
+ "qiXV5XjGVr": "检查你的网络连接后重试。",
+
+ "mkHxE8MGyz": "目录服务未及时响应。稍后重试。",
+
+ "bGZs+G6MBC": "我们这边出了点问题。稍后重试；如果持续发生，请联系目录团队。",
+
+ "cs0KEl0PDg": "{seconds, plural, one {# 秒} other {# 秒}} 后重试。",
+
+ "E+4Rfd8OO8": "未找到服务器",
+
+ "x73MicZ5s4": "没有目录条目匹配该链接或 id。",
+
+ "qR1JDwDMfB": "下架 {name}？",
+
+ "jbLERUBBy9": "它将从目录中消失；已安装的用户会保留但不再收到更新。之后你可以申请重新上架。",
+
+ "umYO7US2Dd": "下架",
+
+ "m01J4p8Hya": "删除此草稿？",
+
+ "ez6uBy9+e/": "撤回 {name}？",
+
+ "x+4c6G1dCA": "草稿及其验证结果将被移除。由于未发布任何内容，对其他人没有任何影响。",
+
+ "tcbp61E//A": "扫描将停止并移除该提交。此前未发布任何内容。",
+
+ "mij/rJ1LWF": "删除草稿",
+
+ "XV7Ow9E2rw": "已请求下架。等待目录处理。",
+
+ "fPglE3fgmr": "已请求重新上架。等待目录处理。",
+
+ "KkfsAuWqkG": "已请求发布。等待目录处理。",
+
+ "z37wgw2fEc": "发布更新",
+
+ "8UL6Nq+yxD": "提交操作",
+
+ "CBWk3dkBzH": "由 {publisher}",
+
+ "OdzbypbknV": "{when} 已保存",
+
+ "kJRrQLABYu": "{when} 已提交",
+
+ "1uLiVJspZq": "联系 Anthropic",
+
+ "RSvO9iz/0C": "更新扫描",
+
+ "14wpR9TeWJ": "更新审核中",
+
+ "x9o/O/3eKV": "更新就绪",
+
+ "+GF0boSx++": "所有权失效",
+
+ "OVFPd+Bap8": "已标记",
+
+ "xJgXjYlVHL": "已被 Anthropic 撤销",
+
+ "Fn3aHFodIU": "需要修改",
+
+ "H/Q30vlEF5": "已下架",
+
+ "qWRLiYbqyl": "已检测",
+
+ "Li58tHLU+1": "验证中",
+
+ "89T/zeH5Kg": "无效",
+
+ "2ntHKvCmi3": "已被取代",
+
+ "PFtMy9n7+q": "已取消",
+
+ "anAnHcEMxU": "上传 #{seq}",
+
+ "VT+9mj1m7D": "验证",
+
+ "P+kgX46Qsn": "内容扫描",
+
+ "+9CPu8wubY": "{axis} 通过",
+
+ "WbGb7g9wq2": "{axis} 待审核",
+
+ "Ie5Srr3QKA": "{axis} 未通过",
+
+ "cH6wYEWUMa": "{axis} 已跳过",
+
+ "GuJilNGyGJ": "{axis} 未能完成",
+
+ "e2L73uSjQJ": "{axis} 待处理",
+
+ "DXF6FsnAPM": "提交进度",
+
+ "pNSjAswFbL": "查看反馈",
+
+ "2miJhyV05u": "此版本需要修改。",
+
+ "zjRZ+l0m/X": "此提交的详细状态尚不可用。",
+
+ "Ni9KRI2Tba": "草稿。尚未发送给 Anthropic。",
+
+ "zOhax1lwRX": "已提交。安全扫描正在运行；通常需要几分钟。",
+
+ "8cU0UOgtwy": "此版本需要修改",
+
+ "N15JY1nUrZ": "审核者正在检查你的列表，通常需要 2 周。解决后会邮件通知你。",
+
+ "SkKrGLuN1W": "因 {category} 挂起。",
+
+ "F0fDp4ECZ9": "准备好后发布。",
+
+ "wkOLgAmECG": "已请求发布。目录很快会处理。",
+
+ "YeJq6jFHjX": "已被 Anthropic 撤销。联系 Anthropic（上方菜单）了解详情。",
+
+ "n79qZQkVJ5": "已被 Anthropic 撤销。请联系工作区管理员联系 Anthropic 了解详情。",
+
+ "mu4+K2g6ES": "已在目录上线。扫描标记此插件待审核；在审核者放行前，新版本不会上线。",
+
+ "zBu+rSEQ3H": "已在目录上线。更新版本已通过检查。",
+
+ "GSbv3Xp5pp": "最近一次推送未通过；已发布版本不受影响。",
+
+ "E5Qb/DNLIx": "已在目录上线。更新版本正在审核中；已发布版本不受影响。",
+
+ "Pgc/Mg1byf": "已在目录上线。更新版本正在扫描中。",
+
+ "thfG8YyJ4j": "已在目录上线。",
+
+ "lu88ZDvPd0": "已在目录上线。一个更新已排队发布。",
+
+ "I6OwRep9ae": "已被 Anthropic 撤销并从目录移除。联系 Anthropic（上方菜单）了解详情。",
+
+ "L7Z9FkXfXc": "已被 Anthropic 撤销并从目录移除。请联系工作区管理员联系 Anthropic 了解详情。",
+
+ "FnVR6Mfq3A": "已下架：在目录中不可见。",
+
+ "PqJAY/Ncph": "重新上架",
+
+ "3EPNsjx442": "已撤回。没有内容在审核或上架中。",
+
+ "cPiiySsON+": "约 2 周",
+
+ "RzSSZ8Sq2b": "{count, plural, one {# 个阻断} other {# 个阻断}}",
+
+ "VXgrSBsdTq": "{count, plural, one {# 个错误} other {# 个错误}}",
+
+ "0kfXGd+ONU": "{count, plural, one {# 条提示} other {# 条提示}}",
+
+ "RIuCpB7cc5": "{count, plural, one {# 个待审核} other {# 个待审核}}",
+
+ "jPm39SIDEf": "阻断",
+
+ "Rdlh9DEGH0": "错误",
+
+ "VSWkne2azY": "警告",
+
+ "48L9YE0ZOn": "待审核",
+
+ "QczpFwiEFr": "显示更多 {count, plural, one {# 条} other {# 条}}",
+
+ "Td7iN8wMz2": "阻断",
+
+ "GAR4okyl1M": "待审核",
+
+ "/6/sPXzIIq": "文档",
+
+ "tnFJ+D/tXf": "无法加载此列表。重试。",
+
+ "xOn+iqgtqU": "此版本被挂起的原因此处暂不可用。",
+
+ "r+j0/bSrL5": "折叠 {label}",
+
+ "qfgoUG4oF9": "展开 {label}",
+
+ "G54ACiVYKo": "服务中",
+
+ "rpt92380HP": "已请求发布",
+
+ "OU/kaAtVy5": "版本历史尚不可用",
+
+ "8UC74ZvdnS": "暂无版本",
+
+ "MpGcX+HO6d": "提交的 commit 扫描后，版本会出现在这里。",
+
+ "YpugWEkRnW": "政策审核",
+
+ "E3kKh9ddun": "审核者正在查看此版本：{category}。解决后会邮件通知你。",
+
+ "bX64oLGkIF": "最新检查",
+
+ "bVrJC46//Y": "此提交的反馈尚不可用。开发者门户的这一部分仍在逐步推出。",
+
+ "fwcdz4wQ9N": "{when} 发现",
+
+ "BJzypElbcP": "{when} 检查",
+
+ "oGB55FS6Vj": "无法加载此版本的发现项。",
+
+ "zxeTvbvOVv": "暂无版本，无可审核内容。",
+
+ "ROzkpQIh6Y": "Claude 应用（网页、桌面、移动端）",
+
+ "gKOE0BKhk4": "{surface} — 不可用：{reason}",
+
+ "4CPeom3dZM": "{surface} — 不可用",
+
+ "EMzRhl/l2l": "plugin.json 中尚无描述。",
+
+ "n3DCbfvXhQ": "最新版本",
+
+ "q+kbFI/wni": "已发布版本",
+
+ "b0XN1ggIAy": "自 {when} 起",
+
+ "yfqT3efWOo": "自动发布",
+
+ "iXEY9nJ/Va": "开启：通过检查的版本自动上线",
+
+ "ECzZCN01Wo": "关闭：每个版本由你手动发布",
+
+ "gxsjYuaAK4": "状态邮件",
+
+ "px8AvKezYV": "在设置中添加联系邮箱",
+
+ "1quG3yus8M": "无可用文件清单。",
+
+ "JPIKVUARII": "{count, plural, one {# 个文件} other {# 个文件}} · {size}",
+
+ "e898ATSUcB": "（显示前 {shown} 个，共 {total} 个）",
+
+ "dzsqGMbzLX": "替换你进行中的 MCP 服务器草稿？",
+
+ "Y+91eVFy9G": "你在此组织有一个未发送的 MCP 服务器提交。注册 {server} 会用此插件的详情重新开始表单；之前的草稿将被丢弃。",
+
+ "coY4RqzJR3": "替换草稿",
+
+ "+756UP75QP": "链接到目录条目",
+
+ "hQxN70mpDB": "粘贴该列表的服务器 URL 或 slug。",
+
+ "8dQzUM+sCe": "https://mcp.example.com/mcp 或 example-slug",
+
+ "r+grVi7aHd": "没有已发布的目录条目匹配该 URL 或 slug。",
+
+ "dJ+hFNbA+K": "在用户机器上运行（仅限 Claude Code）。",
+
+ "W+sSBTD2G0": "已链接 · {name}",
+
+ "U65Je5qezA": "该目录条目所有者不允许第三方插件；此版本将被挂起待审核。",
+
+ "YJ7OS1lxbP": "未注册",
+
+ "3E4/WxWImX": "安装时会要求用户信任此服务器。",
+
+ "+vG7MRaMC4": "注册服务器",
+
+ "SSfR+Ov49r": "链接现有条目",
+
+ "VNzi1T+bkM": "此插件声明的服务器将在其内容被读取后显示在此处。",
+
+ "BX8uqwE1SF": "未在此插件中检测到 MCP 服务器。",
+
+ "iIwdlZozPA": "此提交的包内容尚不可用。",
+
+ "AcAA5xw1pw": "组件",
+
+ "0VJDF2tYxW": "Hook",
+
+ "TxV34S1Sn8": "可安装位置",
+
+ "pd05/0xBTJ": "每次工具调用前",
+
+ "BnQAbNOobt": "每次工具调用后",
+
+ "qQqEgu9Cdu": "Claude Code 发送通知时",
+
+ "fCY7bUL6k7": "Claude 完成回复时",
+
+ "8ZAcbYZzwu": "子代理完成时",
+
+ "v9Eqh8j0TH": "用户提交 prompt 时",
+
+ "1aPYkF2Dpw": "会话开始时",
+
+ "FwYMkex4zX": "对话被压缩前",
+
+ "VzBKdChsv+": "运行 shell 命令",
+
+ "44yE8yD77o": "自动发布新版本",
+
+ "hxdU2pPrT5": "开启后，通过检查的版本无需点击即上线。首个版本始终需要手动发布。",
+
+ "zFegDDwIhJ": "联系人",
+
+ "+F5+66mUmU": "扫描结果和审核反馈会发送到此地址。不会公开显示。",
+
+ "+kq6bD87Wr": "此插件收集或传输用户数据",
+
+ "AZEqel8Xfl": "显示在列表上。调用远程 MCP 服务器或 HTTP hook 的插件应选「是」并提供隐私政策链接。",
+
+ "brklhOVBvU": "要更改仓库或路径，请撤回此提交后重新提交。",
+
+ "49N1kOd/2r": "插件路径",
+
+ "FrW/aWgoVO": "仓库根目录",
+
+ "Szua/02F3+": "跟踪分支",
+
+ "mhXTt62zRA": "默认分支",
+
+ "IpVx0h0IKd": "在目录中隐藏此插件。已安装的用户可继续使用但不再收到更新。",
+
+ "2LnTeeYQUa": "让插件重新在目录中可见。",
+
+ "Z6L8RApw5J": "移除草稿及其验证结果。未发布任何内容。",
+
+ "Nd/6A15FmR": "停止扫描并移除此提交。此前未发布任何内容。",
+
+ "yc4ozrdMpK": "提交已创建",
+
+ "WyNJjWaVbC": "已提交扫描",
+
+ "fTbAUaIhaD": "检测到新版本",
+
+ "3HLU3ZPbp9": "扫描通过",
+
+ "8ZQ52wmbgi": "扫描未通过",
+
+ "ZR3wPa+swe": "扫描待审核",
+
+ "GGYY0cF4+l": "扫描完成",
+
+ "RPpZY4Uesz": "版本通过，可发布",
+
+ "w7CrkEcC0Z": "已检查新提交",
+
+ "T63Z2b/pt/": "已送交政策审核",
+
+ "ZwCGW523P3": "已请求下架",
+
+ "Azubm4AFVk": "已请求重新上架",
+
+ "AK6f6k9P5E": "需要修改",
+
+ "fSKJcEn9S3": "已重新打开",
+
+ "e2S9wq3lqV": "你 / 你的团队",
+
+ "5HBABfmbZ3": "目录团队",
+
+ "topFyIfIMQ": "时间线尚不可用。",
+
+ "NISyyH8s4a": "暂无事件。每次状态变更和扫描结果都会记录在此处。",
+
+ "Yym0TW32FT": "关于 {label}",
+
+ "19J2LODme8": "目录漏斗",
+
+ "Z1EdWhJkcE": "热门搜索词",
+
+ "Vu/ARLnsEA": "组件使用情况",
+
+ "LprJSvvgPk": "按 Claude Code 版本统计的加载错误",
+
+ "0OHwIzV2NG": "MCP 服务器质量",
+
+ "S6QlZnIVfb": "组件",
+
+ "h7N9hlRxTF": "{count, plural, one {# 次调用} other {# 次调用}}",
+
+ "KGwiTzeELQ": "无法加载使用情况。重试。",
+
+ "RbbjNLkgM5": "无法加载最近 {days} 天。显示最近 {shownDays} 天。",
+
+ "Vh55ryTioF": "使用情况尚不可用",
+
+ "tmbNg892Ed": "在用量上报接入前，数字仅供参考。",
+
+ "3PgWEj1gOo": "列表浏览量",
+
+ "0is7880Kll": "安装点击",
+
+ "62oul2piSq": "安装量",
+
+ "jXd/F7iJKZ": "步骤",
+
+ "Aujn2TX+HG": "数量",
+
+ "jtkU3KfMmJ": "转化",
+
+ "8sPgXjIini": "最近 {days} 天",
+
+ "ZunZgUc6SO": "{version}（在线）",
+
+ "7v1XodDOf0": "更旧版本",
+
+ "XSx3wIG9qj": "版本发布且有人安装后，使用情况将出现于此。",
+
+ "ttd7Lc7AX8": "{period} 内来自 Claude Code、Cowork 和 Claude.ai 的新安装。",
+
+ "+VxGzoDmto": "活跃安装（7 天）",
+
+ "Ie5OxZR9fJ": "在至 {date} 的 7 天内至少加载一次该插件的安装数。不受所选周期影响。",
+
+ "jwqnyGgqlK": "活跃安装（28 天）",
+
+ "K+VHcSvCbI": "在至 {date} 的 28 天内至少加载一次该插件的安装数。不受所选周期影响。",
+
+ "RNxFpY3fvb": "卸载量",
+
+ "X2NPLkGQSZ": "{period} 内被移除的安装。",
+
+ "38daJtt6XV": "各端安装量",
+
+ "3AZfXI2CiH": "每日新安装",
+
+ "MCYdRfXbCT": "版本采用情况",
+
+ "u1qamvooMQ": "每个已发布版本的活跃安装占比",
+
+ "WPVKBVcdvN": "{period} 内 Claude.ai 上从列表浏览到安装的情况",
+
+ "1W9OD9Uqky": "{period} 内 Claude.ai 上导向此列表的搜索",
+
+ "UD/BhGTXdV": "搜索词",
+
+ "D02klqnEGS": "{period} 内插件中每个 skill、command、agent、hook 和 MCP 服务器的使用频率",
+
+ "us6El026wy": "此插件没有上报使用情况的组件。",
+
+ "41N97/gtO+": "{period} 内按加载它的 CLI 版本统计的插件加载失败数",
+
+ "USPSC45on4": "此周期内没有上报的插件加载。",
+
+ "VXBu/RaUnl": "加载次数",
+
+ "e7286+Nu+Z": "{period} 内此插件捆绑或链接的服务器的工具调用、错误率和中位延迟",
+
+ "4MZsVzVP/b": "此插件不含 MCP 服务器。",
+
+ "/ZNQCXeiWo": "工具调用",
+
+ "h8mewa/c/E": "中位延迟",
+
+ "isb7pKalxD": "{when} 更新。指标每天从安装和使用上报计算一次，最多延迟 24 小时。日期按 UTC。",
+
+ "IUL1CZgSgS": "指标每天从安装和使用上报计算一次，最多延迟 24 小时。日期按 UTC。",
+
+ "AkmXcvh2kO": "审核并发布",
+
+ "efGQ6qk9UE": "{count}+ 个提交",
+
+ "jLiGujTMXN": "无法确认你访问插件提交的权限。",
+
+ "hEprjxztiX": "你在此组织的角色无法管理插件提交。请联系管理员，或切换账号。",
+
+ "B6ULAreag7": "无法加载你的插件提交。",
+
+ "BTS0+Ceom5": "无法加载你的 MCP 服务器注册。",
+
+ "h0+InDPhVn": "尚未提交",
+
+ "MUFUZLG9kI": "从 GitHub 仓库提交插件，或单独注册一个远程 MCP 服务器。",
+
+ "d45vbfP5Sh": "需要提交方面的帮助？",
+
+ "OSNztLHfg9": "清单格式、审核标准和安全扫描的工作方式请见开发者文档。",
+
+ "wKdWVe62zU": "无法加载更多提交。",
+
+ "ogy6Ws+soR": "通过 GitHub",
+
+ "v6SPRsWOBY": "选择要提交的插件。一旦验证无阻断性问题，即可在此确认详情并提交。",
+
+ "KGAbijUXom": "先验证来源。无阻断性问题后即可在此确认详情并提交。",
+
+ "yRjQioYt3J": "自动发布通过版本",
+
+ "oCXjpESHsk": "首个版本需要你点击发布。此后，通过所有检查的版本会自动上线；关闭此选项可让每个版本在发布前挂起。",
+
+ "0vLHEJrsAG": "你的组织已有一个针对此仓库和路径的提交。从你的提交列表打开它；新 commit 会在那里被获取。",
+
+ "XP8p+9e2dg": "提交版本",
+
+ "yC8BDYGLxO": "我们发送扫描结果和审核问题的地方。不公开显示。",
+
+ "lK3pTVB+Rc": "此插件或其连接的任何服务器是否收集用户数据？",
+
+ "nxiu/zwrtv": "因插件连接远程服务器而预选。",
+
+ "tXVC/EF25a": "未找到隐私政策 URL。在 plugin.json 中添加 {key}，或在 README 中加一个“隐私政策”链接。这是警告，非阻断项。",
+
+ "3L+HjzYmnn": "列表上显示的发布者",
+
+ "sQ8BcIIbY+": "拥有该仓库的 GitHub 账户。无法在此更改。",
+
+ "0UZpR5mjf3": "你的组织名称。上传内容在目录团队快速审核作者后以该名义发布。",
+
+ "fXaZJ3YUqF": "我确认此提交遵守 <policy>Claude 目录政策</policy>，并代表 {org} 接受<terms>目录条款</terms>。",
+
+ "cgGMaCNct6": "此提交在发布前会因短期的政策审核而挂起：{reasons}。你仍可提交；解决后会发邮件。",
+
+ "oHwNAoZ2xv": "重新验证",
+
+ "iJnj6beT7x": "修复「来源」步骤中列出的阻断性问题，推送（或重新上传），然后重新验证。",
+
+ "8xy8ej1CqE": "在 agents/ 下未找到 agent。",
+
+ "g/sonn1xOt": "全部",
+
+ "5qpHG3MUyp": "在 commands/ 下未找到 slash command。",
+
+ "5XAEB6fg/s": "参数提示",
+
+ "cCKuBgeCB8": "未声明 hook（hooks/hooks.json 或 plugin.json）。",
+
+ "nSR780Bx76": "Hook 在 Claude Code 触发匹配事件时于用户机器上运行。安装时会向用户展示。",
+
+ "+hOELnoDab": "匹配器",
+
+ "uojGNQtZ6h": "信号",
+
+ "uu3eznJkcM": "按 URL 匹配",
+
+ "Fw3KDDMwCl": "按 URL 选项匹配",
+
+ "mGOOcg6omh": "按 URL 模式匹配",
+
+ "QDa+fklAD1": "按 directory key 匹配",
+
+ "+d01eeoWXd": "用户配置",
+
+ "13zdX+ieYM": "directory key",
+
+ "r7F48otK2E": "实验性",
+
+ "pBtxLGoqBC": "本地 · 仅限 Claude Code",
+
+ "09B7jioIBU": "关于未注册服务器",
+
+ "7EQEoXP7Sq": "不在 Claude 目录中。用户安装时会看到未注册服务器警告；连接时发现认证。",
+
+ "HG69UMpV1D": "已认领 · {name}（未验证）",
+
+ "fg6GHm+uwF": "关于已认领链接",
+
+ "JMNCgPnJ0d": "你手动将此服务器链接到了一个目录条目。其 URL 与该条目不匹配，因此在目录团队确认链接前，用户安装时仍会看到未注册服务器警告。",
+
+ "z7/rDykSoX": "你管理此条目",
+
+ "O5fumx4Hxm": "非关联",
+
+ "hQu3PnJgO0": "此条目所有者不允许第三方插件。此提交将被挂起待审核。",
+
+ "UVo/EimMuG": "在用户机器上运行。在 Claude Code 中可用；不可在 claude.ai 安装。",
+
+ "lbmtMc18qd": "声明了 directory “{slug}” 但其 URL 不是该条目的，因此显示为未注册。",
+
+ "btOAkcT6Dy": "名称与目录条目“{slug}”相似但 URL 不匹配。审核者会看到这一点。",
+
+ "7bSyAJ+yE+": "注册以获得高级安装功能",
+
+ "Z3ZiebNqy9": "OAuth 客户端凭据、静态 headers、租户 URL、训练数据控制。可选。",
+
+ "jPrBXdbKyr": "无法查询。重试。",
+
+ "wSk5zz6JaL": "你的",
+
+ "Urma4H/8BG": "未声明 MCP 服务器（.mcp.json 或 plugin.json 的 mcpServers）。",
+
+ "yhfPhX4E0b": "你的插件连接的服务器。远程服务器会自动与 Claude 目录比对；注册是可选的，可解锁高级安装功能。",
+
+ "XHXMDybV5R": "{count, plural, one {# 个服务器} other {# 个服务器}}未注册。用户安装时会看到警告。",
+
+ "v0Av2jwFvM": "目录团队确认已认领链接后，警告会消除。",
+
+ "R+0PIXDohL": "此包中还有",
+
+ "m4341dzI3q": "LSP 服务器",
+
+ "dJfGchzCGn": "输出样式",
+
+ "1ehMdRVRLz": "敏感",
+
+ "5L8ty6TiJ4": "bin/ 文件",
+
+ "37Z5zjU8+U": "依赖",
+
+ "KqcfGxc41B": "存在。插件附带的默认设置。",
+
+ "xHEH22AccK": "来自 README",
+
+ "aNRpHGRahW": "来自仓库",
+
+ "VUoK/XCNy5": "来自 GitHub 资料",
+
+ "8F3ORE5nxP": "来自目录条目",
+
+ "zOma1Cs3ER": "自动填充",
+
+ "FAzSoeQzRI": "（在 plugin.json 中设置 {key} 以覆盖）",
+
+ "Zk8plqk/Y0": "未设置。在 plugin.json 中添加 {key}。",
+
+ "hCXW/GWltt": "在 plugin.json 中设置 {key}。",
+
+ "2efkyBoJ26": "无标语",
+
+ "X/EkvunXCS": "列表预览",
+
+ "5FfOtd4EJS": "从 plugin.json 读取，除非字段另有标注。",
+
+ "rxNddiolIR": "主页",
+
+ "z/pIGSw5DW": "关键词",
+
+ "i+zA+sGdKb": "{count, plural, one {# 张截图} other {# 张截图}}",
+
+ "qR2TN8ra9Q": "README",
+
+ "U1tXEvU1a1": "插件根目录未找到 README.md。README 是必填项。",
+
+ "DWVynK2mjR": "隐藏 README",
+
+ "ebLNQZ1+Wk": "显示 README",
+
+ "Hg8ME0DsGY": "README 已截断。显示前 {kb} KB。",
+
+ "kwY+Ee4t3k": "显示完整 README",
+
+ "iGLpTZa1oU": "作用于",
+
+ "eXcD4SNvOR": "部门",
+
+ "TqlgrXGqZt": "行业",
+
+ "1ZHuEXX5Sl": "生活领域",
+
+ "tC2sDrJV7p": "分类",
+
+ "FHSTwExLAe": "在 plugin.json 中设置，但不包含任何已知值（未知 slug 会被丢弃），因此不会显示。",
+
+ "q8768MwgVx": "提交后自动填写。要自行设置，在 plugin.json 中添加 {key} 块。",
+
+ "yXxI4kZ1sI": "从插件内容派生。没有可设置的 platforms 字段。",
+
+ "5TfrI7COM1": "{hooks, plural, one {# 个 hook} other {# 个 hook}}",
+
+ "HI7oW27KTp": "{stdio, plural, one {# 个 stdio 服务器} other {# 个 stdio 服务器}}",
+
+ "72HDHqERrI": "{bin, plural, one {# 个 bin 文件} other {# 个 bin 文件}}",
+
+ "EkgFSRXXYX": "{count, plural, one {# 个 npx/uvx 启动器} other {# 个 npx/uvx 启动器}}",
+
+ "uNL3uI5l3P": "{unpinned} 个未锁定",
+
+ "rYzFZ0/DWl": "本地运行代码：",
+
+ "kspHq8KKW3": "无本地代码执行。",
+
+ "B0t+GrSdQ0": "此插件在本地运行代码",
+
+ "pNcBlzVf6d": "无本地代码执行",
+
+ "J1vzJG2Dt7": "安装时向用户和审核者展示。非阻断项；未锁定版本的 npx/uvx 启动器是。",
+
+ "IoEyA7gLRR": "已锁定",
+
+ "prSHdQgTrw": "未锁定",
+
+ "zQ13GWq6qc": "远程主机：{hosts}",
+
+ "t6dndbcUxo": "在 skills/ 下未找到 skill（或清单中的 skills 路径）。",
+
+ "Y3YKHllu0r": "{name}，预览",
+
+ "+8LNI4IQvS": "{count, plural, one {# 个词} other {# 个词}}",
+
+ "GG5vo/p3Ae": "无可用预览。",
+
+ "aCEZRWgk28": "此仓库的 marketplace.json 列出了 {count, plural, one {# 个插件} other {# 个插件}}。选择要提交的一个。每个插件是独立提交。",
+
+ "ZqENBt9SXD": "一个公开 GitHub 仓库：其 URL 或 owner/repo。指向分支上某文件夹的链接会填入插件路径。",
+
+ "7Wm45sInFw": "输入 GitHub 仓库 URL 或 owner/repo。",
+
+ "k31al80vt4": "插件路径（可选）",
+
+ "xKBdxnnzsG": "存放 .claude-plugin/plugin.json 的文件夹，如果插件不在仓库根目录。",
+
+ "IK+DHh+Lkz": "输入仓库内的一个文件夹。",
+
+ "Eu4UvVMAff": "请先输入仓库",
+
+ "0fWFQhgnAR": "输入仓库内的一个文件夹",
+
+ "efKPzRTlx4": "跟踪仓库的默认分支。每次推送都会扫描，通过版本按你的自动发布设置发布。",
+
+ "mF9uF+cCRT": "正在跟踪默认分支 {branch}。每次推送都会扫描，通过版本按你的自动发布设置发布。",
+
+ "CDWZWndM+6": "此检查从你粘贴的链接中读取 {ref}。",
+
+ "9EMQeRkNRW": "此仓库是 fork；列表会注明。",
+
+ "rHteviHAC+": "获取来源",
+
+ "3bfBS2yL9h": "解包和大小限制",
+
+ "hHoVgEQB6j": "清单 schema",
+
+ "fMQHtq1K7n": "Skills、agents、commands、hooks",
+
+ "5h4Gn9AiLU": "MCP 服务器与 directory 匹配",
+
+ "rwyodeJdtN": "目录 lint",
+
+ "NvetwVh/pP": "名称和发布者检查",
+
+ "diQtkR3V0v": "通过",
+
+ "7KyfekwXxz": "通过但有警告",
+
+ "mnpACuCmAo": "无法运行",
+
+ "yrhXAwV22L": "已跳过",
+
+ "AmEK7fAbr1": "未完成",
+
+ "EJp5Xmou8P": "验证中…",
+
+ "2tMbRbun+7": "验证已取消",
+
+ "Q2fGb+RKMS": "验证完成：通过",
+
+ "ZWU30alitD": "验证完成：有 {count, plural, one {# 个阻断问题} other {# 个阻断问题}}待修复",
+
+ "yen83MCVZD": "无法验证：{error}",
+
+ "j+lZEAdFPU": "未运行",
+
+ "RRcfjHXrPI": "{n, plural, one {# 个阻断} other {# 个阻断}}",
+
+ "6cYP31AvHh": "{n, plural, one {# 个警告} other {# 个警告}}",
+
+ "M70T3a62HJ": "{n, plural, one {# 个待审核} other {# 个待审核}}",
+
+ "O5m9pkva76": "验证通过",
+
+ "C7bkuy+N/T": "有 {count, plural, one {# 个阻断问题} other {# 个阻断问题}}待修复",
+
+ "Ir4sUKl5SR": "{count, plural, one {# 项检查} other {# 项检查}}",
+
+ "sW7krgEhRw": "筛选发现项",
+
+ "Nw09mwjuXh": "全部（{n}）",
+
+ "oM3VIbwdUk": "阻断（{n}）",
+
+ "1KUqlPO+KO": "警告（{n}）",
+
+ "hdbp9UHA0a": "提示（{n}）",
+
+ "XSxDouNUkm": "尚未运行",
+
+ "ALZ8EZl6Pr": "无问题",
+
+ "XaZQVHFWrg": "收集用户数据",
+
+ "J5JaMr4Pqi": "不收集用户数据",
+
+ "sRLzTY9YBZ": "已接受条款",
+
+ "pBMCjRNsim": "尚未接受条款",
+
+ "b1g2CxGbBF": "未选择",
+
+ "hnrY3LI/l8": "插件来源",
+
+ "COCA0qUZm0": "GitHub 仓库",
+
+ "CVIIDg41Oj": "上传压缩包",
+
+ "I6n83cAMCc": "无法获取该仓库",
+
+ "qV9Ov7lzrf": "请检查它是否存在且公开，以及分支和插件路径是否正确。过大的仓库无法验证。",
+
+ "raypeEl0ZU": "GitHub 未响应",
+
+ "cvN5QBfbJc": "验证尚不可用",
+
+ "CqZoQe5IKw": "开发者门户的这一部分仍在逐步推出。稍后重试。",
+
+ "FhXMDPTEzd": "无法验证该压缩包",
+
+ "WKjv11fO/R": "请检查它是一个插件的 zip 包且根目录有 plugin.json，然后重新上传。上传也可能已过期。",
+
+ "aKEuGZu9Jz": "验证未响应",
+
+ "XCaZb8kMm0": "该文件大小为 {size}；上限为 {max}。",
+
+ "UDygh5TdtP": "该文件不是有效的插件压缩包。重新压缩后重试。",
+
+ "uOclU2nKj4": "选择一个 .zip 或 .plugin 文件。",
+
+ "aaod0d+UtT": "插件压缩包",
+
+ "pD/v6PJ2VX": "{size} · sha256 {sha}",
+
+ "TsWB1OZXP5": "替换文件",
+
+ "Yr0ouK/1Xi": ".zip 或 .plugin，最大 {max}。压缩包根目录（或单个顶层文件夹）必须包含 plugin.json 或 .claude-plugin/plugin.json。上传内容在目录团队快速审核作者后以你的组织名义发布。",
+
+ "tWSxhpisaA": "上传功能即将推出",
+
+ "3V0MTJSAV5": "对于不在 GitHub 上托管插件的团队：可上传 .zip 或 .plugin 压缩包，验证、扫描和发布流程相同。在此之前，请从公开 GitHub 仓库提交。",
+
+ "LAPfhtOlMz": "已上传 {percent}%",
+
+ "nYwg3P/JKZ": "正在发送压缩包",
+
+ "tOhfn5Sz1j": "取消上传",
+
+ "ZvrgBmCvW1": "将插件压缩包拖到此处，或",
+
+ "g/FwNxylqg": "审核并提交",
+
+ "YV87G+zcIU": "提交步骤",
+
+ "zA7EJDDfw9": "提交中",
+
+ "WzNIedo1Tb": "检查此草稿是否已提交",
+
+ "ywK+Fnp9+G": "重新提交或重新开始：上次提交未响应",
+
+ "hdWezwcl7Q": "上传进行中",
+
+ "Q+IBrshMj3": "验证进行中",
+
+ "obXIwnbYhh": "已提交。正在打开。",
+
+ "gWncie6iD2": "版本已提交，但 {n, plural, one {一个服务器链接} other {# 个服务器链接}}未保存。在插件的 MCP 服务器标签页链接它们。",
+
+ "rDUCKaPv9m": "无法加载此插件",
+
+ "zHnykXE3Q+": "返回插件",
+
+ "ZtmV/+qefv": "输入联系邮箱以继续。",
+
+ "qTHHFJExLk": "接受目录条款以继续。",
+
+ "BBmpJC9uM+": "验证压缩包以继续。",
+
+ "xmZ+1laF7v": "验证仓库以继续。",
+
+ "VLppMdWKtE": "选择要提交的插件。",
+
+ "vjr2dLjkHm": "第 {n} 步，共 {count} 步",
+
+ "aR4X1mhGln": "检查版本",
+
+ "+1xxVTuTb5": "检查列表",
+
+ "XksMdUGQVb": "未被提交",
+
+ "WBwhdFVFWZ": "此草稿可能已提交。",
+
+ "B6qdEx/xMm": "之前一次提交从此页面发出但未收到响应。在再次发送前检查该插件的版本。",
+
+ "oDbYOZIXr8": "之前一次提交从此页面发出但未收到响应。在再次发送前检查你的插件。",
+
+ "aUPny0rPWo": "上传 {name} 的下一个版本。plugin.json 中的插件名必须保持 {pluginName}。",
+
+ "UKBQzXPBVW": "验证前须知",
+
+ "wC+Nn8AIN3": "README.md，说明它做什么以及传输哪些数据",
+
+ "gKlY+4AXHx": "LICENSE 文件或 plugin.json 中的 license 字段",
+
+ "ul/eEtcTJ1": "plugin.json 中的图标",
+
+ "41NORE/cVs": "如果与远程服务器通信，需隐私政策 URL",
+
+ "v126BWzhvz": "{npx} 和 {uvx} 启动器的锁定版本",
+
+ "OpBo40HZJD": "此包中",
+
+ "ZgnC3MOpw3": "本地代码执行",
+
+ "J6erL0QunE": "接下来会发生什么",
+
+ "IVsKnAfrvl": "安全扫描运行；通常需要几分钟。",
+
+ "oFAQ8OmoYj": "任何因政策审核挂起的内容都会交给审核者，通常需要 2 周。",
+
+ "lF1XgO3Urk": "你发布批准的版本，或在开启自动发布时自动上线。",
+
+ "dGWQ2bpTGd": "以压缩包形式上传插件。我们在你继续前验证清单并运行目录检查。",
+
+ "4eLkptq0OR": "指向你的仓库。我们在你继续前验证清单并运行目录检查。",
+
+ "w+6DdMkbfr": "{name} 的新版本来自其仓库。",
+
+ "chGZ16cBYf": "上传 {name} 的下一个版本。在此验证，然后像其他版本一样扫描。",
+
+ "3paFt+drHs": "插件在目录中的展示方式，按安装时的原样从 {name} 读取。要更改字段，编辑 plugin.json 或 README 后重新验证。",
+
+ "YVsRPXoqg3": "告诉审核者在哪里找到你，以及插件读取、写入和发送到平台外的内容。",
+
+ "CHZxW9i7di": "确认列表发布方并代表 {org} 接受目录条款。",
+
+ "JRRUHOZXcY": "确认详情后提交。安全扫描需要几分钟；因政策审核挂起的内容更久，且不保证批准。",
+
+ "WierRCMiv4": "此上传成为现有提交的下一个版本。它会像其他版本一样被扫描，并按提交的自动发布设置发布。",
+
+ "AMzZtCTPUS": "先验证来源",
+
+ "EiArBgC/xG": "选择要提交的插件",
+
+ "bc0OEXL9Su": "修复 {count, plural, one {# 个阻断问题} other {# 个阻断问题}}并重新验证",
+
+ "f9+GTTL2je": "正在加载此插件",
+
+ "8xjf8odjtP": "改为推送到跟踪分支",
+
+ "UWgOeKeXMM": "在「数据处理」步骤输入联系邮箱。",
+
+ "8ji5jXauG6": "在「合规」步骤接受目录条款。",
+
+ "GkJKn7ZdVF": "此提交跟踪 {repo}。推送到其跟踪分支以创建新版本；它会自动被获取和扫描。",
+
+ "bZM/T4EFBK": "此提交在 {branch} 上跟踪 {repo}。推送到该分支以创建新版本；它会自动被获取和扫描。",
+
+ "AxgRz59/LV": "新版本",
+
+ "UUYxYIYWNR": "提交",
+
+ "FYh6fCXST3": "{agentName} 空闲",
+
+ "X77H1v7vfY": "{agentName} 正在聆听",
+
+ "Zx47n54LMX": "{agentName} 正在思考",
+
+ "y6s9FyqN52": "{agentName} 正在说话",
+
+ "8wr0+uDl5E": "{agentName} 开心",
+
+ "cjSFHUs41b": "{agentName} 困惑",
+
+ "ptdTM2p+CX": "{agentName} 休眠中",
+
+ "t/CHHVXVCU": "{agentName} 遇到错误",
+
+ "Elfz37yw5r": "无法刷新。",
+
+ "e1KQ/wG8OC": "正在刷新活动…",
+
+ "qYCDZS2z6k": "正在读取活动",
+
+ "djiB0f1Amf": "正在回复",
+
+ "8AhrmKi/v7": "正在签到",
+
+ "eE5pJD0hXj": "无法完成",
+
+ "revJ36hiBJ": "运行过一次",
+
+ "fqCgwXMVCQ": "等待你的回答",
+
+ "DwcQLU6O5D": "上次运行",
+
+ "0UtKAnCNEf": "尚未运行",
+
+ "Fi9p8DsSHj": "已自动停止",
+
+ "YnW+1qyVTE": "停止",
+
+ "qYmdwv5imE": "停止此助手",
+
+ "gyPfzcYpON": "结束助手的工作并撤回它正在等待的任何 prompt。",
+
+ "hUEtkgMHeh": "无法停止。重试。",
+
+ "vd6691nSyX": "打开会话",
+
+ "tLPGW/6wJw": "返回会话",
+
+ "iKMAWNHFiM": "一切安静",
+
+ "1TfbBgkF9p": "没有等待你的事项。发个请求，它会出现在这里。",
+
+ "ymuHIDgr1b": "未命名例程",
+
+ "WwY6F2CAXJ": "签到",
+
+ "eLCAEP8LHj": "附件",
+
+ "kBNVyKFBMq": "自动运行",
+
+ "K4FF3+50XC": "你已批准",
+
+ "cUQXt+NlHH": "Aibo 想添加到你的日历",
+
+ "X5UEog1CBm": "Aibo 想在 {name} 中删除内容",
+
+ "/uKL31o+o+": "Aibo 想编辑文档",
+
+ "5lHc0O0tsN": "Aibo 想编辑文件",
+
+ "5vKCVpoCs6": "Aibo 想编辑表格",
+
+ "3wFMrgQENb": "Aibo 想读取文件",
+
+ "Otbw8fsJJ8": "Aibo 想运行命令",
+
+ "b+/uizu45J": "Aibo 想保存草稿",
+
+ "gt+qYNuBMA": "Aibo 想搜索你的文件",
+
+ "j69Ey9HM8t": "Aibo 想发送邮件",
+
+ "2spWBfvUrc": "Aibo 想发送消息",
+
+ "1QInbffPYF": "Aibo 想上传文件",
+
+ "uFeGe7fmSe": "Aibo 想使用浏览器",
+
+ "u7SAPg+55/": "Aibo 想使用你的电脑",
+
+ "hGh6jm3WOU": "Aibo 想使用 {name}（{verb}）",
+
+ "v3LWP4ydt+": "Aibo 想使用 {tool}",
+
+ "Bm1q5KqTMB": "Aibo 想在网上查东西",
+
+ "bTTLG43p19": "Aibo 想写入文件",
+
+ "Bg5ZDugO6v": "发送",
+
+ "n5mzsZTTXj": "保存草稿",
+
+ "s01E3V7WeE": "添加到日历",
+
+ "RAiU66Kmgc": "运行",
+
+ "bW0S0YqBFF": "上传",
+
+ "Efg694aiWV": "删除",
+
+ "oJrxSdaIF1": "编辑",
+
+ "lHW2tot7uc": "写入",
+
+ "otmrNdmkn4": "打开草稿",
+
+ "/uGL6kVMNd": "已完成：{step}",
+
+ "IbRFEyPa4c": "进行中：{step}",
+
+ "2O/hcS+izu": "未开始：{step}",
+
+ "kXpCjr3Xxn": "{agentName} 的进度：{steps}",
+
+ "rYYmeFhuGr": "{name} 的列表",
+
+ "2/cFQjpTqG": "昨天起为你完成的事项",
+
+ "giaNTmhhzJ": "等待中",
+
+ "ZC5Fm6QSCJ": "显示步骤",
+
+ "IV3sqL9vA0": "我在跟进",
+
+ "nJGpAtWS9E": "无法读取页面",
+
+ "vRLRfOSp1J": "显示整个回顾",
+
+ "H2F/nW8M4q": "缩短回顾",
+
+ "FojxRDQVQV": "{count, plural, one {# 项需要你} other {# 项需要你}}",
+
+ "r1GdwUcozP": "页面过大，无法在此显示。刷新会重新请求。",
+
+ "k5HJ1vQyMJ": "概览页",
+
+ "Nb3PVDUBUD": "停止“{name}”？",
+
+ "a/+RseIIDC": "已完成，{done} / {total}",
+
+ "j9FmtZ2jwf": "在「任务」中显示该任务",
+
+ "nAhwJo1M2K": "正在处理",
+
+ "hd07WZo2x3": "{done} / {total}",
+
+ "75fWtdSzn8": "Tofu",
+
+ "2DvCT1ImIa": "Pebble",
+
+ "p6Tv7DdG3C": "Tofu，扁平",
+
+ "FTICSlA3Xw": "Pebble，扁平",
+
+ "RIRKWGxUya": "Spark",
+
+ "oIt05dsGSX": "Clay",
+
+ "QAH0PDEMlI": "Cactus",
+
+ "0wqSlhJCi2": "Heather",
+
+ "IaMhudhnvH": "Mineral",
+
+ "KVf1KxQh58": "Plum",
+
+ "xcvCDQ5rhW": "Bowler",
+
+ "Kixa9JXo57": "派对帽",
+
+ "ACPkXmfPdA": "睡帽",
+
+ "Eus4G4a6uS": "无帽子",
+
+ "lbCwg6+QIn": "脸",
+
+ "Pp/0poEZe1": "随机",
+
+ "JTxZLNMorx": "颜色",
+
+ "00EomWIw5J": "帽子",
+
+ "JqP2jexUUT": "嗨，我是 Aibo。我可以帮你管理日历、处理邮件、在网上查东西和办事、记住你不想记的琐事，让计划落地。有什么我能帮忙的？",
+
+ "B+9UeMVu5O": "嗨，我是 {name}：{purpose}。先做什么？",
+
+ "Rp8cisjaYl": "嗨，我是 {name}。先做什么？",
+
+ "HpTCY2Ogin": "嗨。我该做什么？",
+
+ "H++Xutpmz4": "你叫它什么",
+
+ "m0RdHLOaJE": "用途",
+
+ "Ba+tezVVqt": "无",
+
+ "Bset7M9F7L": "默认是为你的账户选择的模型。仅应用于此对话。",
+
+ "1+ftkF4tFN": "无法设置。重试。",
+
+ "3J3IJdYa0i": "该名称已被占用。",
+
+ "d0XioCEHCg": "该名称不可用。",
+
+ "5bajoTo4wd": "给它起个名字。",
+
+ "PPyxmR6IeU": "此 agent 的对话现已共享，因此无法在此更改。"
+}
