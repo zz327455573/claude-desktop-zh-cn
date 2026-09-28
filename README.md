@@ -1,92 +1,156 @@
-# Claude Desktop 中文语言包（社区维护版）
+<div align="center">
 
-> 上游汉化项目 [Jyy1529/claude-desktop_win-zh_cn](https://github.com/Jyy1529/claude-desktop_win-zh_cn) 自 2026-07-25 起停滞，新版 Claude Desktop（app-1.52386.6）新增的大量功能未覆盖。
-> 本仓库在上游 12700 条基础上，补齐了 1339 条新功能文案，使其对应当前版本的 react-intl 词条实现 **100% 覆盖**（重扫确认 0 缺失）。
+# Claude Desktop 简体中文语言包
+
+**Claude Desktop (Windows) 的完整简体中文本地化**
+
+[![覆盖率](https://img.shields.io/badge/覆盖-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![词条](https://img.shields.io/badge/词条-31726-blue)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![适配版本](https://img.shields.io/badge/适配-2.9939.2-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+
+官方从未发布简体中文语言包。上游社区项目
+[Jyy1529/claude-desktop_win-zh_cn](https://github.com/Jyy1529/claude-desktop_win-zh_cn)
+自 2026-07 停更，只覆盖约 1.3 万词条，且存在大量 `待翻译:` 占位。
+
+**本项目是目前仍在维护的中文本地化来源**，对应当前版本 **100% 覆盖**（31726/31727 条）。
+
+[使用说明](#-使用说明) · [更新记录](CHANGELOG.md) · [参与翻译](CONTRIBUTING.md) · [问题反馈](.github/ISSUE_TEMPLATE/translation-issue.md)
+
+</div>
+
+---
 
 ## 这是什么
 
-Claude Desktop（Claude Code 桌面版，安装于 `%LOCALAPPDATA%\AnthropicClaude\`）的中文语言包。
-每次版本更新，Squirrel 会装一个全新的 `app-xxx` 目录，汉化会被清零，需要重打一遍。
+Claude Desktop（含 Claude Code 桌面版）的界面文案全部走 react-intl，
+简体中文不在官方支持的语言列表里。本项目提供三份语言包文件，
+放进对应目录即可让界面变成中文。
 
-本仓库提供：
-- **`zh-CN.json`** —— 完整中文界面语言包，**36977 条**（上游 35638 + 本仓库新增 1339）
-- **`菜单-zh-CN.json`** —— Electron 原生右键菜单翻译
-- **`补丁-第一部分.json` / `补丁-第二部分.json`** —— 本次新增的 1339 条增量翻译
-- **`合并补丁.py`** —— 把增量合并进完整语言包的脚本
-- **`扫描缺失.py`** —— 扫描新版 JS 找出未翻译词条的工具（版本更新后用它定位新词）
+## 使用说明
 
-## 新增覆盖了什么
+### 方式一：直接下载（推荐）
 
-这 1339 条主要覆盖 Claude Desktop 8-9 月新增的功能模块（上游 7 月版本里没有的）：
+从 [Releases](https://github.com/zz327455573/claude-desktop-zh-cn/releases/latest)
+下载对应版本的语言包，覆盖到以下位置（`<版本号>` 见
+`%LOCALAPPDATA%\AnthropicClaude\packages\RELEASES` 里最新的那行）：
 
-- **Aibo 个人助手** —— 日历管理、邮件、待办、页面、位置共享、语音消息、权限请求等完整界面
-- **插件目录（Plugin Directory）** —— 提交、验证、扫描、审核、发布、下架、重新上架、安全检查全套流程文案
-- **MCP 服务器注册** —— 未注册服务器、directory 链接、OAuth、租户 URL 等
-- **Hook 配置** —— 各类 hook 事件（工具调用前后、会话开始、压缩前等）
-- **权限/登录/验证请求** —— 重新连接、设备验证、浏览器访问批准
-- **新模型与思考模式** —— 自适应思考、扩展思考、快速模式、Opus/Sonnet 说明
-- **体验数据重置、用量上限、组织管理** 等
+| 下载的文件 | 覆盖到 |
+|---|---|
+| `zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\ion-dist\i18n\zh-CN.json` |
+| `菜单-zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\zh-CN.json` |
+| `statsig-zh-CN.json` | `...\resources\ion-dist\i18n\statsig\zh-CN.json` |
 
-## 怎么用
+然后把 `%LOCALAPPDATA%\Claude-3p\config.json` 的 `locale` 改成 `zh-CN`：
 
-> 前提：你已经在用上游的 `patch_windowsapps_json_only.py` 和 `patch_chunks_zh_cn.py` 打过汉化。本仓库只替换/补充其中的语言包。
-
-### 打汉化（版本更新后）
-
-```bash
-cd /d/AI-Tools/claude-zh-patch/claude-desktop_win-zh_cn-master
-
-# 1. 用本仓库的 zh-CN.json 替换上游那份
-cp /d/AI-Tools/claude-desktop-zh-cn/zh-CN.json resources/frontend-zh-CN.json
-cp /d/AI-Tools/claude-desktop-zh-cn/菜单-zh-CN.json resources/desktop-zh-CN.json
-
-# 2. 跑上游补丁脚本（把 <新版本> 换成实际目录名）
-python patch_windowsapps_json_only.py --app-dir "C:\Users\Admin\AppData\Local\AnthropicClaude\app-<新版本>"
-python patch_chunks_zh_cn.py --app-dir "C:\Users\Admin\AppData\Local\AnthropicClaude\app-<新版本>"
-
-# 3. 跑误伤修复（必跑，带语法门禁）
-python "C:\Users\Admin\AppData\Local\AnthropicClaude\汉化说明\fix-zh-patch-damage.py"
-```
-
-### 改 locale
-
-打开 `C:\Users\Admin\AppData\Local\Claude-3p\config.json`，确认：
 ```json
-"locale": "zh-CN"
+{ "locale": "zh-CN" }
 ```
-> 注意：应用读的是 Local 这份。更新可能把它重置回 en-US，必须检查。
-> Claude Desktop 必须完全退出（托盘右键退出）再改，否则退出时会用内存里的旧值回写覆盖。
 
-### 重启
+> ⚠️ **要改 `Local` 下的这份，不是 `Roaming` 的** —— 应用实际读 Local 这份。
+> 改完**完全退出** Claude Desktop（托盘右键 → 退出，不是最小化）再打开。
 
-完全退出 Claude Desktop（托盘右键退出，不是最小化）再打开。
-
-## 版本更新后自己补词
-
-新版本装上后，词条会对不上。用本仓库的扫描工具定位新词：
+### 方式二：脚本一键应用
 
 ```bash
-python 扫描缺失.py
-# 输出 missing_keys.json，列出所有新版 JS 里有、语言包里没有的 id
+git clone https://github.com/zz327455573/claude-desktop-zh-cn.git
+cd claude-desktop-zh-cn
+python tools/install.py
 ```
 
-然后人工翻译，用 `合并补丁.py` 合并进 `zh-CN.json`。这就是本仓库 1339 条的来源。
+`install.py` 会自动识别当前运行的版本，完成全部四步：备份原版语言包 →
+写入三份语言包 → 给 JS 补语言白名单 → 设好 locale。
+加 `--dry-run` 可预览将改动的内容而不写入。
 
-## 为什么不覆盖全部英文
+### 常见问题
 
-Claude Desktop 的界面文字分两类：
+<details>
+<summary><b>为什么版本更新后界面又变回英文？</b></summary>
 
-1. **走 react-intl 的文案**（有 `id` + `defaultMessage`）—— **本仓库已 100% 覆盖**（重扫 0 缺失）
-2. **硬编码在组件里的英文字符串**（如 `<button>Cancel</button>`）—— 这类不在语言包里，需要改 JS
+Claude Desktop 用 Squirrel 自动更新，每次更新都安装一个全新的
+<code>app-x.x.x.x</code> 目录（干净官方文件），汉化不跟着迁移，
+需要重新覆盖一次。
+</details>
 
-第 2 类有约 7 万处，其中很多是代码逻辑值（图标名 `Copy`、AST 节点 `ADBE Vector Group`、枚举值 `Assignment` 等），盲替换会复现"复制按钮消失"那类事故。所以上游只挑高频词替换（`patch_chunks_zh_cn.py` 那几百处），不做全覆盖。这是有意的权衡，不是遗漏。
+<details>
+<summary><b>覆盖了语言包，设置里仍不显示简体中文？</b></summary>
 
-## 致谢与版权
+JS 里还有一份语言白名单，需要把 <code>zh-CN</code> 加进去。
+<code>tools/apply.py</code> 会处理；手动覆盖的话，在
+<code>resources/ion-dist/assets/</code> 的 <code>shared-*.js</code> 里搜索
+<code>"en-US"</code> 附近的语言数组，把 <code>"zh-CN"</code> 补进去。
+</details>
 
-- 基础汉化（12700 条 + 补丁工具）来自 [Jyy1529/claude-desktop_win-zh_cn](https://github.com/Jyy1529/claude-desktop_win-zh_cn)，MIT 许可
-- 本仓库在它基础上新增的 1339 条翻译为社区补充，同样以 MIT 许可发布
-- Claude Desktop 本体版权归 Anthropic 所有，本仓库不包含任何官方代码，仅提供语言包和工具
+<details>
+<summary><b>个别地方还是英文 / 显示 “待翻译”？</b></summary>
 
-## 上游 PR
+官方会把新功能的文案 id 重新 hash，旧 key 失效、新 key 没译文。
+带上界面截图和具体文案去提 issue，会补进下一个版本。
+</details>
 
-本仓库的 1339 条增量已可向上游提交 PR。如果你 fork 上游想合并，直接用 `补丁-第一部分.json` + `补丁-第二部分.json` 合并进上游的 `frontend-zh-CN.json` 即可。
+<details>
+<summary><b>改完语言包闪退/白屏</b></summary>
+
+语言包 JSON 损坏会导致解析失败。先验证再重启：
+
+```bash
+python -c "import json;json.load(open('zh-CN.json',encoding='utf-8'))"
+```
+</details>
+
+## 覆盖范围说明
+
+官方界面文字分两类：
+
+1. **走 react-intl 的文案**（有 `id` + `defaultMessage`）—— **本项目 100% 覆盖**
+2. **硬编码在组件里的英文**（如 `<button>Cancel</button>`）—— 不在语言包里，需改 JS
+
+第 2 类约有数万处，其中很多是代码逻辑值（图标名 `Copy`、AST 节点名、
+枚举值等），盲目替换会引发运行事故。汉化工具只挑高频 UI 词替换那几百处，
+不做全覆盖——这是有意的权衡，不是遗漏。
+
+## 目录结构
+
+```
+claude-desktop-zh-cn/
+├── zh-CN.json              主语言包（前端界面，react-intl 格式，约 3.2 万条）
+├── 菜单-zh-CN.json           Electron 原生右键菜单
+├── statsig-zh-CN.json      Statsig 实验平台
+├── docs/
+│   └── terminology.json    术语表（翻译必读，保证全文一致）
+├── tools/
+│   ├── install.py          一键应用（语言包 + 白名单 + locale + 备份）
+│   ├── sync.py             对比当前版本英文源，导出待译增量
+│   ├── apply.py            合并增量翻译并校验
+│   ├── validate.py         占位符/ICU 结构一致性校验
+│   ├── scan-missing.py     扫描当前版本的未翻译词条
+│   └── merge-patches.py    合并增量补丁文件
+├── .github/
+│   └── ISSUE_TEMPLATE/     问题反馈模板
+├── CHANGELOG.md            更新记录
+└── CONTRIBUTING.md         参与翻译指南
+```
+
+## 参与翻译
+
+官方版本更新会带来新的未翻译词条。本项目维护一套增量工作流，
+每轮只需翻译新增部分，不必重译整包。详见
+[CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## 术语约定
+
+`docs/terminology.json` 是必须遵守的术语表，选自高频 UI 概念，
+保证同一英文词在全站译法一致（Artifact → 制品、Session → 会话、
+Connector → 连接器、Effort → 推理强度等）。
+
+## 致谢
+
+初始翻译基础来自 [Jyy1529/claude-desktop_win-zh_cn](https://github.com/Jyy1529/claude-desktop_win-zh_cn)（已停更）。
+本项目接管维护，并修复了若干会影响运行的翻译缺陷：
+变量名被误译成中文（`{role}` → `{角色}`，会让 react-intl 运行时找不到变量）、
+ICU 复数块被整体删除（导致参数缺失）等。
+
+## License
+
+[MIT](LICENSE)。Claude Desktop 本体版权归 Anthropic 所有，
+本仓库不包含任何官方代码，仅提供语言包和工具。
