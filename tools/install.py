@@ -71,7 +71,7 @@ def main() -> int:
 
     targets = [
         (ROOT / 'zh-CN.json', res / 'ion-dist' / 'i18n' / 'zh-CN.json'),
-        (ROOT / '菜单-zh-CN.json', res / 'zh-CN.json'),
+        (ROOT / 'menu-zh-CN.json', res / 'zh-CN.json'),
         (ROOT / 'statsig-zh-CN.json',
          res / 'ion-dist' / 'i18n' / 'statsig' / 'zh-CN.json'),
     ]

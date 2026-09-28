@@ -38,7 +38,7 @@ Claude Desktop（含 Claude Code 桌面版）的界面文案全部走 react-intl
 | 下载的文件 | 覆盖到 |
 |---|---|
 | `zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\ion-dist\i18n\zh-CN.json` |
-| `菜单-zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\zh-CN.json` |
+| `menu-zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\zh-CN.json` |
 | `statsig-zh-CN.json` | `...\resources\ion-dist\i18n\statsig\zh-CN.json` |
 
 然后把 `%LOCALAPPDATA%\Claude-3p\config.json` 的 `locale` 改成 `zh-CN`：
@@ -114,7 +114,7 @@ python -c "import json;json.load(open('zh-CN.json',encoding='utf-8'))"
 ```
 claude-desktop-zh-cn/
 ├── zh-CN.json              主语言包（前端界面，react-intl 格式，约 3.2 万条）
-├── 菜单-zh-CN.json           Electron 原生右键菜单
+├── menu-zh-CN.json           Electron 原生右键菜单
 ├── statsig-zh-CN.json      Statsig 实验平台
 ├── docs/
 │   └── terminology.json    术语表（翻译必读，保证全文一致）
