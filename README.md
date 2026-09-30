@@ -25,7 +25,7 @@
 （`{count} × {name}`）、产品名、示例值、单位与数字，显示的是变量值而非英文句子。
 判断方法是对比官方日文本地化：官方同样保留英文的即为不该译。
 
-[使用说明](#-使用说明) · [更新记录](CHANGELOG.md) · [参与翻译](CONTRIBUTING.md) · [问题反馈](.github/ISSUE_TEMPLATE/translation-issue.md)
+[使用说明](#使用说明) · [覆盖范围说明](#覆盖范围说明) · [更新记录](CHANGELOG.md) · [参与翻译](CONTRIBUTING.md) · [问题反馈](.github/ISSUE_TEMPLATE/translation-issue.md)
 
 </div>
 
