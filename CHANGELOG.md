@@ -12,6 +12,41 @@
 
 ---
 
+## [v2.16120.0] - 2026-09-30
+
+适配 Claude Desktop **2.16120.0**。
+
+### 覆盖情况
+
+| 指标 | 数值 |
+|---|---|
+| react-intl 总词条 | 32,292 |
+| 已覆盖 | 32,280 |
+| **前端界面覆盖率** | **100.0%** |
+| 原生菜单覆盖率 | 100%（753/753） |
+| 占位符/ICU 结构校验 | 0 不一致 |
+
+### 变更
+
+- **新增 862 条翻译**，从 96.4% 补到 100%
+- 清理 921 条官方已重构 message id 的废弃词条
+- 新增覆盖的功能模块：
+  - **Routine（例行任务）**—— cron 周期调度、一次性定时、预设仓库选择
+  - **Skill 版本管理** —— 重名冲突、保留名检测、重新上传
+  - **GitHub Enterprise 实例接入** 与 OAuth 授权范围提示
+  - **后台账户迁移**、频道指令权限、自动批准模式
+  - **EDR 集成厂商 ID**、URL 屏蔽模式、预算与支出限额说明
+  - Cowork VM 无响应、连接器被移除导致内容加载失败等错误提示
+
+### 版本号说明
+
+本版版本号从 2.9939.4 跳到 2.16120.0，是官方版本策略变更（不再是递增小版本），
+目录结构与 i18n 布局未变，增量工作流直接适用。
+
+[本次发布的完整说明](https://github.com/zz327455573/claude-desktop-zh-cn/releases/tag/v2.16120.0)
+
+---
+
 ## [v2.9939.4] - 2026-09-30
 
 适配 Claude Desktop **2.9939.4**。
@@ -114,7 +149,8 @@ MCP 注册、Hook 配置等）。
 
 ---
 
-[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.4...HEAD
+[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.16120.0...HEAD
+[v2.16120.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.4...v2.16120.0
 [v2.9939.4]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.2...v2.9939.4
 [v2.9939.2]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.7032.0...v2.9939.2
 [v2.7032.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v1.52386.6...v2.7032.0

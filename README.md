@@ -5,9 +5,9 @@
 **Claude Desktop (Windows) 的完整简体中文本地化**
 
 [![菜单覆盖](https://img.shields.io/badge/菜单-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
-[![界面覆盖](https://img.shields.io/badge/界面-99%25-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![界面覆盖](https://img.shields.io/badge/界面-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![词条](https://img.shields.io/badge/词条-32500%2B-blue)](https://github.com/zz327455573/claude-desktop-zh-cn)
-[![适配版本](https://img.shields.io/badge/适配-2.9939.4-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![适配版本](https://img.shields.io/badge/适配-2.16120.0-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 官方从未发布简体中文语言包。上游社区项目
@@ -19,7 +19,7 @@
 | 包 | 覆盖率 |
 |---|---|
 | `menu-zh-CN.json`（右键菜单、托盘菜单） | **100%** |
-| `zh-CN.json`（前端界面） | **99%** |
+| `zh-CN.json`（前端界面） | **100%** |
 
 界面剩余未覆盖的 key 中约 266 个**不含自然语言**——是占位符模板
 （`{count} × {name}`）、产品名、示例值、单位与数字，显示的是变量值而非英文句子。
