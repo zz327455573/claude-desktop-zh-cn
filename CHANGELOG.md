@@ -102,7 +102,7 @@
 - 建立增量翻译工作流（`tools/sync.py` → 翻译 → `tools/apply.py` →
   `tools/validate.py` 校验），后续版本更新只需翻译新增部分
 
-[本次发布的完整说明](https://github.com/zz327455573/claude-desktop-zh-cn/releases/tag/v2.7032.0)
+[该版本的完整变更](https://github.com/zz327455573/claude-desktop-zh-cn/compare/v1.52386.6...v2.7032.0)
 
 ---
 
@@ -118,4 +118,4 @@ MCP 注册、Hook 配置等）。
 [v2.9939.4]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.2...v2.9939.4
 [v2.9939.2]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.7032.0...v2.9939.2
 [v2.7032.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v1.52386.6...v2.7032.0
-[v1.52386.6]: https://github.com/zz327455573/claude-desktop-zh-cn/releases/tag/v1.52386.6
+[v1.52386.6]: https://github.com/zz327455573/claude-desktop-zh-cn/commit/debd47856391486f9e8489b637be763170a0dc79
