@@ -12,6 +12,42 @@
 
 ---
 
+## [v2.19675.0] - 2026-10-03
+
+适配 Claude Desktop **2.19675.0**。
+
+### 覆盖情况
+
+| 指标 | 数值 |
+|---|---|
+| react-intl 总词条 | 32,850 |
+| 已覆盖 | 32,839 |
+| **前端界面覆盖率** | **99.97%** |
+| 原生菜单覆盖率 | 100%（753/753） |
+| 真漏译 | **0 条** |
+| 占位符/ICU 结构不一致 | **0 条** |
+
+### 变更
+
+- **新增 790 条翻译**，前端界面从 96.7% 补到 99.97%
+- 清理 1155 条官方已重构 message id 的废弃词条
+- 新增覆盖：账单周期（年付/月付）选择、促销价与折扣说明、
+  席位数量变更、非营利组织标准席位、定时任务（scheduled task）、
+  成员/群组可用连接器范围、SSO 强制要求、审核完成提示等
+
+### 质量保障
+
+- 新增 `tools/test_validate.py` —— 校验器的回归测试，12 个用例覆盖
+  6 类必须抓到的真 bug（变量名误译、占位符漏插/多插、分支被删、
+  标签名被译、number 格式丢失）与 6 类不能误报的正常译法
+  （中文无单复数同译、select 分支译中文、嵌套 ICU、空分支保留等）
+- 校验器此前抓出过 10 条 `{role}` → `{角色}` 这类运行时 bug，
+  现在它的能力本身也有测试保护，改动后不会悄悄退化
+
+[本次发布的完整说明](https://github.com/zz327455573/claude-desktop-zh-cn/releases/tag/v2.19675.0)
+
+---
+
 ## [v2.16120.0] - 2026-09-30
 
 适配 Claude Desktop **2.16120.0**。
@@ -149,7 +185,8 @@ MCP 注册、Hook 配置等）。
 
 ---
 
-[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.16120.0...HEAD
+[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.19675.0...HEAD
+[v2.19675.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.16120.0...v2.19675.0
 [v2.16120.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.4...v2.16120.0
 [v2.9939.4]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.2...v2.9939.4
 [v2.9939.2]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.7032.0...v2.9939.2

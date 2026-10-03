@@ -7,7 +7,7 @@
 [![菜单覆盖](https://img.shields.io/badge/菜单-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![界面覆盖](https://img.shields.io/badge/界面-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![词条](https://img.shields.io/badge/词条-32500%2B-blue)](https://github.com/zz327455573/claude-desktop-zh-cn)
-[![适配版本](https://img.shields.io/badge/适配-2.16120.0-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![适配版本](https://img.shields.io/badge/适配-2.19675.0-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 官方从未发布简体中文语言包。上游社区项目
