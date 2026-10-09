@@ -12,6 +12,41 @@
 
 ---
 
+## [v2.31226.0] - 2026-10-09
+
+适配 Claude Desktop **2.31226.0**。
+
+### 覆盖情况
+
+| 指标 | 数值 |
+|---|---|
+| react-intl 总词条 | 34,262 |
+| 已覆盖 | 34,258 |
+| **前端界面覆盖率** | **99.99%** |
+| 原生菜单覆盖率 | 100%（753/753） |
+| 真漏译 | **0 条** |
+| 占位符/ICU 结构不一致 | **0 条** |
+
+### 变更
+
+- 新增 763 条翻译，覆盖 2.19675.0 → 2.31226.0 之间的新功能
+- 清理 1,709 条官方已重构 message id 的废弃词条
+- 新增覆盖：会话导出、Google 账户授权范围、SSH known_hosts 与
+  UserKnownHostsFile 各类失败原因、Salesforce 外部客户端应用、
+  应用市场同步失败、访客通行证、席位申请审批流等
+
+### 本轮工作流改进
+
+- 发现并修复一个会导致**增量条目被静默跳过**的工具 bug：
+  `sync.py` 此前只写 `todo.json` 不刷新 `en-cache.json`，用过期缓存做
+  校验基准时，新版本的增量 key 会被判为"已覆盖"而漏译。已修复。
+- 增加「英文原文桥接」步骤：同一句文案在不同版本 message id 会变，
+  用英文文本做键从旧版本恢复译文，本轮回收 97 条
+
+[本次发布的完整说明](https://github.com/zz327455573/claude-desktop-zh-cn/releases/tag/v2.31226.0)
+
+---
+
 ## [v2.19675.0] - 2026-10-03
 
 适配 Claude Desktop **2.19675.0**。
@@ -185,7 +220,8 @@ MCP 注册、Hook 配置等）。
 
 ---
 
-[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.19675.0...HEAD
+[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.31226.0...HEAD
+[v2.31226.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.19675.0...v2.31226.0
 [v2.19675.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.16120.0...v2.19675.0
 [v2.16120.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.4...v2.16120.0
 [v2.9939.4]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.2...v2.9939.4
