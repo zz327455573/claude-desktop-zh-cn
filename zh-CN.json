@@ -35965,5 +35965,9 @@
  "Md5RYhHOqM": "未添加。请重试",
  "XatbO3U7ea": "永久丢弃会删除此会话工作树中的 {count, plural, one {# 个未提交的更改} other {# 个未提交的更改}}。会话保持归档状态。",
  "5X9jLsRGq0": "Claude Code 的文件已锁定",
- "RZUxWESCwt": "正在等待 {host}：它需要你登录。"
+ "RZUxWESCwt": "正在等待 {host}：它需要你登录。",
+ "8Kedv9b0uy": "账户操作",
+ "9Q8Q1BcKqB": "正在清除",
+ "9RW77kZAU0": "无法强制更改",
+ "AamLMmettm": "正在开始听写…"
 }

@@ -12,6 +12,30 @@
 
 ---
 
+## [v2.31226.1] - 2026-10-11
+
+适配 Claude Desktop **2.31226.1**，前端界面 **100.00% 覆盖**。
+
+### 覆盖情况
+
+| 指标 | 数值 |
+|---|---|
+| react-intl 总词条 | 34,262 |
+| 已覆盖 | 34,262 |
+| **前端界面覆盖率** | **100.00%** |
+| 原生菜单覆盖率 | 100%（753/753） |
+| 真漏译 | **0 条** |
+| 占位符/ICU 结构不一致 | **0 条** |
+
+### 变更
+
+- 新增 4 条：账户操作、正在清除、无法强制更改、正在开始听写
+- 本轮实际增量极小（.0 → .1 只新增 4 个词条 id）
+
+[本次发布的完整说明](https://github.com/zz327455573/claude-desktop-zh-cn/releases/tag/v2.31226.1)
+
+---
+
 ## [v2.31226.0] - 2026-10-09
 
 适配 Claude Desktop **2.31226.0**。
@@ -220,7 +244,8 @@ MCP 注册、Hook 配置等）。
 
 ---
 
-[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.31226.0...HEAD
+[未发布]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.31226.1...HEAD
+[v2.31226.1]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.31226.0...v2.31226.1
 [v2.31226.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.19675.0...v2.31226.0
 [v2.19675.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.16120.0...v2.19675.0
 [v2.16120.0]: https://github.com/zz327455573/claude-desktop-zh-cn/compare/v2.9939.4...v2.16120.0
