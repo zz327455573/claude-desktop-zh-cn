@@ -25,21 +25,23 @@ jobs:
       - name: 校验语言包 JSON 合法性与扁平结构
         shell: python
         run: |
+          # 注意：GitHub Actions 的 Windows runner 默认 stdout 编码是 cp1252，
+          # print 中文会 UnicodeEncodeError。所以这里只用 ASCII 输出。
           import json, sys, pathlib
           ok = True
           for name in ('zh-CN.json', 'zh-CN-dynamic.json'):
               p = pathlib.Path(name)
               if not p.exists():
-                  print(f'缺少 {name}'); sys.exit(1)
+                  print(f'missing {name}'); sys.exit(1)
               data = json.loads(p.read_text(encoding='utf-8-sig'))
-              assert isinstance(data, dict) and data, f'{name} 不是非空对象'
+              assert isinstance(data, dict) and data, f'{name} not a non-empty object'
               bad = [k for k, v in data.items() if not isinstance(v, str)]
               if bad:
-                  print(f'{name} 有 {len(bad)} 个非字符串值'); ok = False
+                  print(f'{name}: {len(bad)} non-string values'); ok = False
               empty = [k for k, v in data.items() if not v.strip()]
               if empty:
-                  print(f'{name} 有 {len(empty)} 条空译文'); ok = False
-              print(f'{name}: {len(data)} 条, 结构 OK')
+                  print(f'{name}: {len(empty)} empty values'); ok = False
+              print(f'{name}: {len(data)} entries, structure OK')
           sys.exit(0 if ok else 1)
 
       - name: 占位符与 ICU 结构一致性（防白屏）
@@ -47,23 +49,26 @@ jobs:
         run: |
           # 语言包与参考译本逐条比对占位符签名。不一致会让 react-intl 运行时抛错，
           # 比译错更严重，所以这一关不过就不允许合并。
-          import json, re, sys, pathlib
+          # 同样只用 ASCII 输出（Windows runner stdout 默认 cp1252）。
+          import json, sys, pathlib
           sys.path.insert(0, 'tools')
           from test_install import signature
           root = pathlib.Path('.')
           ref_p = root / 'docs' / 'reference-zh-CN.json'
           if not ref_p.exists():
-              print('没有 docs/reference-zh-CN.json，跳过一致性比对'); sys.exit(0)
+              print('no docs/reference-zh-CN.json, skip'); sys.exit(0)
           ref = json.loads(ref_p.read_text(encoding='utf-8-sig'))
           zh = json.loads((root / 'zh-CN.json').read_text(encoding='utf-8-sig'))
           bad = [k for k, v in ref.items()
                  if k in zh and signature(zh[k]) != signature(v)]
           if bad:
-              print(f'{len(bad)} 条占位符不一致:')
+              print(f'{len(bad)} placeholder mismatches:')
               for k in bad[:10]:
-                  print(f'  {k}\n    参考: {ref[k][:100]}\n    语言包: {zh[k][:100]}')
+                  print(f'  {k}')
+                  print(f'    ref: {ref[k][:100]}')
+                  print(f'    zh : {zh[k][:100]}')
               sys.exit(1)
-          print(f'占位符一致性 OK（比对了 {len(ref)} 条）')
+          print(f'placeholder consistency OK ({len(ref)} entries compared)')
 
       - name: 检查 .bat 使用 CRLF 换行
         shell: bash
