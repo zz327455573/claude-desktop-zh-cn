@@ -202,18 +202,29 @@ class TestVersionKey:
         assert ranked[0] == 'app-2.42304.2'
 
 
+_ZH_CACHE: dict | None = None
+
+
+def load_zh() -> dict:
+    """读 zh-CN.json 并缓存。2.7MB 的 JSON 解析一次要好几秒，别每个测试各解析一遍。
+
+    用模块级缓存而不是 setUpClass：pytest 不认 unittest 的 setUpClass 钩子
+    （它要 setup_class），本文件又要兼容"没有 pytest 时直接运行"，所以用最笨
+    但两种运行方式都有效的模块级缓存。
+    """
+    global _ZH_CACHE
+    if _ZH_CACHE is None:
+        _ZH_CACHE = json.loads(
+            (ROOT / 'zh-CN.json').read_text(encoding='utf-8-sig'))
+    return _ZH_CACHE
+
+
 class TestLanguagePackIntegrity:
     """B 组：语言包完整性。占位符不一致会让 react-intl 运行时抛错。"""
 
-    @classmethod
-    def setUpClass(cls):
-        # 2.7MB 的 JSON 解析一次要好几秒，缓存住，别每个测试各解析一遍
-        cls._zh = json.loads(
-            (ROOT / 'zh-CN.json').read_text(encoding='utf-8-sig'))
-
     @property
     def zh(self) -> dict:
-        return self._zh
+        return load_zh()
 
     def test_zh_cn_json_is_valid_and_flat(self):
         data = self.zh
@@ -251,9 +262,6 @@ def _run_without_pytest() -> int:
     passed = failed = 0
     for cls in (TestLocaleWhitelistPatch, TestVersionKey,
                 TestLanguagePackIntegrity, TestDynamicPack):
-        setup = getattr(cls, 'setUpClass', None)
-        if setup:
-            setup()
         instance = cls()
         for name in sorted(dir(instance)):
             if not name.startswith('test_'):
