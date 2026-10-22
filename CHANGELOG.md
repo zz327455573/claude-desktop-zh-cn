@@ -49,6 +49,23 @@
 - 新增 `一键汉化.bat`：双击即用，自动检测 Python、提醒退出 Claude
 - 移除 `menu-zh-CN.json`、`statsig-zh-CN.json`（新版已不需要）
 
+### 项目基础设施（让用户能自己判断可不可信）
+
+- **新增测试套件** `tools/test_install.py`（19 项）：覆盖白名单补丁的边界
+  （不误伤图标名/枚举数组、幂等、非法 JSON 兜底）、版本目录识别、
+  语言包 JSON 合法性与扁平结构、占位符一致性
+- **新增 CI** `.github/workflows/ci.yml`：每次推送自动跑测试 + 校验语言包 +
+  检查占位符一致性 + 检查 `.bat` 为 CRLF 换行
+- **新增 `还原.bat` + `tools/restore.py`**：一键恢复官方原版。
+  没有备份时也能还原（删除注入文件 + 反向修改白名单）
+- **新增 `SECURITY.md`**：逐条列出脚本会改哪些文件、明确不做的事、怎么自行核实
+- **新增 `I18N-COVERAGE-REPORT.md`**：用真实数据的覆盖率报告，含判定口径
+- **新增 `SHA256SUMS.txt`**：语言包 SHA256 校验和，可验证下载未被篡改
+- 新增 bug 报告 issue 模板与 PR 模板
+- 重构 `install.py`：白名单补丁逻辑提取为模块级 `patch_locale_array_in_text()`
+  以便测试覆盖；新增 `looks_like_language_whitelist()` 严格判据，
+  只改识别为语言白名单的数组，避免误伤业务代码
+
 ---
 
 ## [v2.31226.1] - 2026-10-11

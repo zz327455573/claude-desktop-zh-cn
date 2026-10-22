@@ -44,6 +44,52 @@ LOCALE_ARRAY_RE = re.compile(
     r'(?:\s*,\s*"[a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,4})*")+\s*\]'
 )
 
+# 官方语言集合。用来识别"这是语言白名单数组"而不是普通字符串数组，
+# 避免误改业务代码里的数组（那是历史上白屏事故的根因之一）。
+OFFICIAL_LANGUAGE_LOCALES = {
+    'en-US', 'de-DE', 'fr-FR', 'ko-KR', 'ja-JP',
+    'es-419', 'es-ES', 'it-IT', 'hi-IN', 'pt-BR', 'id-ID',
+}
+
+
+def looks_like_language_whitelist(locs: list) -> bool:
+    """判断一个字符串数组是不是语言白名单。
+
+    要求以 en-US 开头，且包含至少 6 个官方语言、并含 de-DE/fr-FR/ja-JP/ko-KR。
+    这个判据足够严格：普通业务数组（图标名、枚举值、字段名）不可能同时满足。
+    """
+    if not locs or locs[0] != 'en-US':
+        return False
+    hits = OFFICIAL_LANGUAGE_LOCALES.intersection(locs)
+    return len(hits) >= 6 and {'de-DE', 'fr-FR', 'ja-JP', 'ko-KR'}.issubset(hits)
+
+
+def patch_locale_array_in_text(text: str) -> tuple[str, bool]:
+    """给 JS 文本里的语言白名单数组补上 LOCALE。
+
+    返回 (新文本, 是否有改动)。只动识别为语言白名单的数组；
+    已含目标语言的数组、非法 JSON 的数组、非白名单数组都原样返回。
+    """
+    changed = False
+
+    def fix(m: 're.Match') -> str:
+        nonlocal changed
+        raw = m.group(0)
+        try:
+            locs = json.loads(raw)
+        except json.JSONDecodeError:
+            return raw
+        if not isinstance(locs, list) or not all(isinstance(x, str) for x in locs):
+            return raw
+        if not looks_like_language_whitelist(locs):
+            return raw
+        if LOCALE in locs:
+            return raw
+        changed = True
+        return raw[:-1] + f',"{LOCALE}"]'
+
+    return LOCALE_ARRAY_RE.sub(fix, text), changed
+
 
 def find_app_dir() -> Path | None:
     """取 RELEASES 里最新版对应的 app-* 目录。"""
@@ -124,27 +170,13 @@ def main() -> int:
                 text = path.read_text(encoding='utf-8')
             except OSError:
                 continue
-            if '"en-US"' not in text and f'"{LOCALE}"' in text:
+            new, changed = patch_locale_array_in_text(text)
+            if not changed:
                 continue
-
-            def fix(m: re.Match) -> str:
-                raw = m.group(0)
-                try:
-                    locs = json.loads(raw)
-                except json.JSONDecodeError:
-                    return raw
-                if not isinstance(locs, list) or 'en-US' not in locs:
-                    return raw
-                if LOCALE in locs:
-                    return raw
-                return raw[:-1] + f',"{LOCALE}"]'
-
-            new = LOCALE_ARRAY_RE.sub(fix, text)
-            if new != text:
-                bakp = bak / path.relative_to(res)
-                if not bakp.exists():
-                    bakp.parent.mkdir(parents=True, exist_ok=True)
-                    shutil.copy2(path, bakp)
+            bakp = bak / path.relative_to(res)
+            if not bakp.exists():
+                bakp.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(path, bakp)
                 path.write_text(new, encoding='utf-8')
                 patched += 1
         print(f'  白名单补丁: {patched} 个 JS')

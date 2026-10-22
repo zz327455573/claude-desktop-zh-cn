@@ -8,6 +8,7 @@
 [![界面覆盖](https://img.shields.io/badge/界面-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![词条](https://img.shields.io/badge/词条-37600%2B-blue)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![适配版本](https://img.shields.io/badge/适配-2.42304.2-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![测试](https://github.com/zz327455573/claude-desktop-zh-cn/actions/workflows/ci.yml/badge.svg)](https://github.com/zz327455573/claude-desktop-zh-cn/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 官方从未发布简体中文语言包。上游社区项目
@@ -25,7 +26,7 @@
 （`{count} × {name}`）、产品名、URL、文件路径、单位与数字，显示的是变量值而非英文句子。
 判断方法是对比官方日文本地化：官方同样保留英文的即为不该译。
 
-[使用说明](#使用说明) · [覆盖范围说明](#覆盖范围说明) · [更新记录](CHANGELOG.md) · [参与翻译](CONTRIBUTING.md) · [问题反馈](.github/ISSUE_TEMPLATE/translation-issue.md)
+[使用说明](#使用说明) · [安全说明](#安全说明) · [质量与透明度](#质量与透明度) · [覆盖范围说明](#覆盖范围说明) · [更新记录](CHANGELOG.md) · [参与翻译](CONTRIBUTING.md)
 
 </div>
 
@@ -36,6 +37,50 @@
 Claude Desktop（含 Claude Code 桌面版）的界面文案全部走 react-intl，
 简体中文不在官方支持的语言列表里。本项目提供语言包文件和一键安装脚本，
 让界面变成中文。
+
+## 安全说明
+
+**脚本会改你电脑上的 4 个地方，全部可逆、范围限定：**
+
+| 改什么 | 位置 |
+|---|---|
+| 写入 4 个 JSON 语言包 | `%LOCALAPPDATA%\AnthropicClaude\app-<版本>\resources\ion-dist\i18n\` |
+| 给 1 个 JS 的语言白名单加一个条目 | 同版本 `resources\ion-dist\assets\v1\shared-*.js` |
+| 改 2 个配置的 `locale` 字段 | `%APPDATA%` 与 `%LOCALAPPDATA%` 下的 `Claude-3p\config.json` |
+| 备份原版文件 | 仓库目录下 `out/original-backup\<版本>\` |
+
+**明确不做的事：**
+
+- 不请求管理员权限、不弹 UAC——只读写你自己 AppData 下的文件
+- 不联网，运行时不下载任何东西
+- 不读取、不上传你的任何数据（不碰对话记录、账号凭据、剪贴板）
+- 不加开机启动、不写注册表、不装服务
+- 不改 Claude 程序本体（`claude.exe`、`app.asar` 均不碰）
+
+**怎么自己核实：** 全部代码开源，`一键汉化.bat` 只有 80 行，右键 → 编辑就能读完。
+也可以先预览再决定：
+
+```bash
+python tools/install.py --dry-run
+```
+
+**怎么撤销：** 双击 `还原.bat`，没有备份也能还原。
+
+更多细节见 [SECURITY.md](SECURITY.md)。
+
+## 质量与透明度
+
+| 项目 | 状态 |
+|---|---|
+| 自动化测试 | [![测试](https://github.com/zz327455573/claude-desktop-zh-cn/actions/workflows/ci.yml/badge.svg)](https://github.com/zz327455573/claude-desktop-zh-cn/actions/workflows/ci.yml) 19 项，每次推送自动跑 |
+| 前端界面覆盖 | 100%（35,151 / 35,441，详见[覆盖率报告](I18N-COVERAGE-REPORT.md)） |
+| 占位符 / ICU 结构不一致 | **0 条** |
+| 缺失 key | **0 条** |
+| 语言包完整性校验 | `SHA256SUMS.txt` 提供 SHA256，可自行核对 |
+
+CI 每次推送会检查：测试套件、两份语言包的 JSON 合法性与扁平结构、
+占位符与 ICU 结构一致性（这一项不过不允许合并——不一致会让 react-intl
+运行时抛错导致白屏）、`.bat` 换行必须为 CRLF。
 
 ## 使用说明
 
@@ -48,6 +93,15 @@ Claude Desktop（含 Claude Code 桌面版）的界面文案全部走 react-intl
 
 > 脚本会自动识别你当前运行的版本、自动备份原版文件、自动改好语言设置。
 > 运行前建议先退出 Claude（脚本检测到在运行也会提醒你）。
+
+### 怎么还原成英文
+
+双击 **`还原.bat`** 即可，界面回到英文。
+即使没有备份（比如你只下载了 ZIP、没在本机跑过安装）也能还原——
+脚本会删除注入的语言包文件并反向修改白名单。
+
+> 详细的安全说明（会动哪些文件、明确不做的事、怎么自己核实）见
+> [SECURITY.md](SECURITY.md)。
 
 ### 方式二：命令行
 
