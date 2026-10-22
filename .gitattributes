@@ -1,0 +1,8 @@
+# Windows 批处理必须用 CRLF，LF 会导致双击运行时解析异常
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 其余文本文件统一由 git 处理
+*.py text
+*.md text
+*.json text

@@ -6,8 +6,8 @@
 
 [![菜单覆盖](https://img.shields.io/badge/菜单-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![界面覆盖](https://img.shields.io/badge/界面-100%25-brightgreen)](https://github.com/zz327455573/claude-desktop-zh-cn)
-[![词条](https://img.shields.io/badge/词条-32500%2B-blue)](https://github.com/zz327455573/claude-desktop-zh-cn)
-[![适配版本](https://img.shields.io/badge/适配-2.31226.1-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![词条](https://img.shields.io/badge/词条-37600%2B-blue)](https://github.com/zz327455573/claude-desktop-zh-cn)
+[![适配版本](https://img.shields.io/badge/适配-2.42304.2-green)](https://github.com/zz327455573/claude-desktop-zh-cn)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 官方从未发布简体中文语言包。上游社区项目
@@ -18,11 +18,11 @@
 
 | 包 | 覆盖率 |
 |---|---|
-| `menu-zh-CN.json`（右键菜单、托盘菜单） | **100%** |
-| `zh-CN.json`（前端界面） | **100%** |
+| `zh-CN.json`（前端界面，含 dynamic） | **100%** |
+| 原生菜单（官方自带 `resources/zh-Hans.json`） | 100% |
 
-界面剩余未覆盖的 key 中约 266 个**不含自然语言**——是占位符模板
-（`{count} × {name}`）、产品名、示例值、单位与数字，显示的是变量值而非英文句子。
+界面剩余未覆盖的 key 中约 339 个**不含自然语言**——是占位符模板
+（`{count} × {name}`）、产品名、URL、文件路径、单位与数字，显示的是变量值而非英文句子。
 判断方法是对比官方日文本地化：官方同样保留英文的即为不该译。
 
 [使用说明](#使用说明) · [覆盖范围说明](#覆盖范围说明) · [更新记录](CHANGELOG.md) · [参与翻译](CONTRIBUTING.md) · [问题反馈](.github/ISSUE_TEMPLATE/translation-issue.md)
@@ -34,33 +34,22 @@
 ## 这是什么
 
 Claude Desktop（含 Claude Code 桌面版）的界面文案全部走 react-intl，
-简体中文不在官方支持的语言列表里。本项目提供三份语言包文件，
-放进对应目录即可让界面变成中文。
+简体中文不在官方支持的语言列表里。本项目提供语言包文件和一键安装脚本，
+让界面变成中文。
 
 ## 使用说明
 
-### 方式一：直接下载（推荐）
+### 方式一：一键安装（推荐，不需要敲命令）
 
-从 [Releases](https://github.com/zz327455573/claude-desktop-zh-cn/releases/latest)
-下载对应版本的语言包，覆盖到以下位置（`<版本号>` 见
-`%LOCALAPPDATA%\AnthropicClaude\packages\RELEASES` 里最新的那行）：
+1. 点本页面右上角绿色按钮 **Code** → **Download ZIP**，下载后解压
+2. 双击解压出来的 **`一键汉化.bat`**
+3. 按屏幕提示操作（没装过 Python 的话，它会告诉你去哪下、怎么装）
+4. 装完打开 Claude Desktop 就是中文
 
-| 下载的文件 | 覆盖到 |
-|---|---|
-| `zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\ion-dist\i18n\zh-CN.json` |
-| `menu-zh-CN.json` | `%LOCALAPPDATA%\AnthropicClaude\app-<版本号>\resources\zh-CN.json` |
-| `statsig-zh-CN.json` | `...\resources\ion-dist\i18n\statsig\zh-CN.json` |
+> 脚本会自动识别你当前运行的版本、自动备份原版文件、自动改好语言设置。
+> 运行前建议先退出 Claude（脚本检测到在运行也会提醒你）。
 
-然后把 `%LOCALAPPDATA%\Claude-3p\config.json` 的 `locale` 改成 `zh-CN`：
-
-```json
-{ "locale": "zh-CN" }
-```
-
-> ⚠️ **要改 `Local` 下的这份，不是 `Roaming` 的** —— 应用实际读 Local 这份。
-> 改完**完全退出** Claude Desktop（托盘右键 → 退出，不是最小化）再打开。
-
-### 方式二：脚本一键应用
+### 方式二：命令行
 
 ```bash
 git clone https://github.com/zz327455573/claude-desktop-zh-cn.git
@@ -68,9 +57,31 @@ cd claude-desktop-zh-cn
 python tools/install.py
 ```
 
-`install.py` 会自动识别当前运行的版本，完成全部四步：备份原版语言包 →
-写入三份语言包 → 给 JS 补语言白名单 → 设好 locale。
+`install.py` 会自动识别当前运行的版本，完成全部步骤：备份原版语言包 →
+写入语言包 → 给 JS 补语言白名单 → 设好 locale。
 加 `--dry-run` 可预览将改动的内容而不写入。
+
+### 手动覆盖（高级）
+
+适合想自己控制每一步的用户。`<版本号>` 见
+`%LOCALAPPDATA%\AnthropicClaude\packages\RELEASES` 里最新的那行：
+
+| 仓库里的文件 | 覆盖到 |
+|---|---|
+| `zh-CN.json` | `...\app-<版本号>\resources\ion-dist\i18n\zh-Hans.json` |
+| `zh-CN-dynamic.json` | `...\app-<版本号>\resources\ion-dist\i18n\dynamic\zh-Hans.json` |
+
+然后把 `%LOCALAPPDATA%\Claude-3p\config.json` 的 `locale` 改成 `zh-Hans`：
+
+```json
+{ "locale": "zh-Hans" }
+```
+
+> ⚠️ **三点提醒**
+> 1. 要改 **`Local`** 下的那份 config，不是 `Roaming` 的——应用实际读 Local 这份
+> 2. **语言代码是 `zh-Hans` 不是 `zh-CN`**。2.42304.0 起官方改了代码，
+>    填 `zh-CN` 会匹配失败掉回英文
+> 3. 改完**完全退出** Claude Desktop（托盘右键 → 退出，不是最小化）再打开
 
 ### 常见问题
 
@@ -79,23 +90,23 @@ python tools/install.py
 
 Claude Desktop 用 Squirrel 自动更新，每次更新都安装一个全新的
 <code>app-x.x.x.x</code> 目录（干净官方文件），汉化不跟着迁移，
-需要重新覆盖一次。
+需要重新覆盖一次。重新双击 <code>一键汉化.bat</code> 即可。
 </details>
 
 <details>
 <summary><b>覆盖了语言包，设置里仍不显示简体中文？</b></summary>
 
-JS 里还有一份语言白名单，需要把 <code>zh-CN</code> 加进去。
-<code>tools/apply.py</code> 会处理；手动覆盖的话，在
+JS 里还有一份语言白名单，需要把 <code>zh-Hans</code> 加进去。
+<code>tools/install.py</code> 会处理；手动覆盖的话，在
 <code>resources/ion-dist/assets/</code> 的 <code>shared-*.js</code> 里搜索
-<code>"en-US"</code> 附近的语言数组，把 <code>"zh-CN"</code> 补进去。
+<code>"en-US"</code> 附近的语言数组，把 <code>"zh-Hans"</code> 补进去。
 </details>
 
 <details>
-<summary><b>个别地方还是英文 / 显示 “待翻译”？</b></summary>
+<summary><b>界面大部分中文，但个别地方还是英文？</b></summary>
 
-官方会把新功能的文案 id 重新 hash，旧 key 失效、新 key 没译文。
-带上界面截图和具体文案去提 issue，会补进下一个版本。
+两种原因：一是该文案硬编码在组件里、不走语言包；二是官方把新功能的文案 id
+重新 hash 了，旧 key 失效。带上界面截图和具体文案去提 issue，会补进下一个版本。
 </details>
 
 <details>
