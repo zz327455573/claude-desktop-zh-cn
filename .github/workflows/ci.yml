@@ -88,6 +88,9 @@ jobs:
         shell: bash
         run: |
           if [ ! -f SHA256SUMS.txt ]; then
-            echo '没有 SHA256SUMS.txt，跳过'; exit 0
+            echo 'no SHA256SUMS.txt, skip'; exit 0
           fi
-          sha256sum -c SHA256SUMS.txt
+          # git 可能把文本文件按 CRLF 检出，行尾的 \r 会让 sha256sum 找不到文件，
+          # 所以先剥掉 \r 再校验。
+          tr -d '\r' < SHA256SUMS.txt > /tmp/sums.txt
+          sha256sum -c /tmp/sums.txt

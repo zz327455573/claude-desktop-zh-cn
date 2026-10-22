@@ -2,7 +2,12 @@
 *.bat text eol=crlf
 *.cmd text eol=crlf
 
+# 校验和文件固定 LF：sha256sum -c 读到的文件名若带 \r 会找不到文件
+SHA256SUMS.txt text eol=lf
+
 # 其余文本文件统一由 git 处理
 *.py text
 *.md text
 *.json text
+*.yml text
+*.yaml text
